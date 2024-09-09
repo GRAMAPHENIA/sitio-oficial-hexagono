@@ -1,5 +1,5 @@
 ---
-title: Sitio de Hexágono
+Sitio de Hexágono
 ---
 
 # Sitio de Hexágono
