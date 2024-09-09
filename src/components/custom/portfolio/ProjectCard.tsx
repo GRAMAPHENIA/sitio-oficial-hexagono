@@ -1,7 +1,7 @@
 // src/components/ProjectCard.tsx
 import Image from "next/image";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
-import type { Project } from "@/types";
+import type { Project } from "@/types/portfolio";
 
 interface ProjectCardProps {
   project: Project;
