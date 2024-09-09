@@ -1,5 +1,5 @@
 // src/data/faqItems.ts
-import type { FAQItemType } from "@/types";
+import type { FAQItemType } from "@/types/faq";
 
 export const faqItems: FAQItemType[] = [
   {
