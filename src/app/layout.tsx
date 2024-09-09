@@ -1,6 +1,9 @@
 import { ThemeProvider } from "@/components/ui/theme-provider";
-import type { Metadata } from "next";
+
+import { ToastProvider } from "@/components/ui/use-toast";
+
 import localFont from "next/font/local";
+import type { Metadata } from "next";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -21,9 +24,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
@@ -35,7 +38,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <ToastProvider>{children}</ToastProvider>
         </ThemeProvider>
       </body>
     </html>

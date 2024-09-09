@@ -8,6 +8,7 @@ import FAQ from "@/components/custom/faq/FAQ";
 // import ContactForm from "@/components/custom/contact-form";
 // import CTA from "@/components/custom/cta";
 import { Footer } from "@/components/custom/footer";
+import ContactForm from "@/components/custom/contact/ContactForm";
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
         <PricingTable />
         <Portfolio />
         <FAQ />
-        {/* <ContactForm /> */}
+        <ContactForm />
         {/* <CTA /> */}
       </div>
       <Footer />
