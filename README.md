@@ -1,7 +1,3 @@
----
-Sitio de Hexágono
----
-
 # Sitio de Hexágono
 
 El **Sitio de Hexágono** es una agencia de diseño y desarrollo web especializada en crear experiencias digitales excepcionales. Utilizamos las últimas tecnologías y enfoques para construir sitios web modernos y funcionales.
