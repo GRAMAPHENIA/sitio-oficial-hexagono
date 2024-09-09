@@ -3,7 +3,7 @@ import Features from "@/components/custom/features/Features";
 import Topbar from "@/components/custom/TopBar";
 import Testimonial from "@/components/custom/testimonials/TestimonialsSection";
 import PricingTable from "@/components/custom/pricing/PricingTable";
-// import Portfolio from "@/components/custom/portfolio";
+import Portfolio from "@/components/custom/portfolio/Portfolio";
 // import FAQ from "@/components/custom/faq";
 // import ContactForm from "@/components/custom/contact-form";
 // import CTA from "@/components/custom/cta";
@@ -18,7 +18,7 @@ export default function Home() {
         <Features />
         <Testimonial />
         <PricingTable />
-        {/* <Portfolio /> */}
+        <Portfolio />
         {/* <FAQ /> */}
         {/* <ContactForm /> */}
         {/* <CTA /> */}
