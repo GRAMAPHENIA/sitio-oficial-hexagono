@@ -32,7 +32,7 @@ export default function Topbar() {
       </button>
 
       {/* Menú para dispositivos grandes */}
-      <div className="hidden lg:flex flex-1 justify-center">
+      <div className="hidden lg:flex flex-1 justify-center list-none ">
         <NavigationMenu>
           {menuItems.map((item, index) => (
             <ListItem key={index} item={item} />
@@ -42,7 +42,7 @@ export default function Topbar() {
 
       {/* Menú para dispositivos móviles */}
       {menuOpen && (
-        <div className="lg:hidden absolute top-16 left-0 w-full bg-white dark:bg-card p-4">
+        <div className="lg:hidden absolute top-16 left-0 w-full bg-white dark:bg-card p-4 list-none">
           <NavigationMenu>
             {menuItems.map((item, index) => (
               <ListItem key={index} item={item} />
