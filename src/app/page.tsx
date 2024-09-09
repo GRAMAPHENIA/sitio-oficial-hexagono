@@ -4,7 +4,7 @@ import Topbar from "@/components/custom/TopBar";
 import Testimonial from "@/components/custom/testimonials/TestimonialsSection";
 import PricingTable from "@/components/custom/pricing/PricingTable";
 import Portfolio from "@/components/custom/portfolio/Portfolio";
-// import FAQ from "@/components/custom/faq";
+import FAQ from "@/components/custom/faq/FAQ";
 // import ContactForm from "@/components/custom/contact-form";
 // import CTA from "@/components/custom/cta";
 import { Footer } from "@/components/custom/footer";
@@ -19,7 +19,7 @@ export default function Home() {
         <Testimonial />
         <PricingTable />
         <Portfolio />
-        {/* <FAQ /> */}
+        <FAQ />
         {/* <ContactForm /> */}
         {/* <CTA /> */}
       </div>
