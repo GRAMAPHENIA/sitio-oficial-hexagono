@@ -5,7 +5,7 @@ const page = () => {
   return (
     <>
       <section>
-        <CustomDevelopment />{" "}
+        <CustomDevelopment />
       </section>
     </>
   );

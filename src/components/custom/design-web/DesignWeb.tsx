@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const DesignWeb = () => {
   return (
-    <section className="flex flex-col items-center mx-auto text-center py-12">
+    <section className="flex flex-col items-center mx-auto text-center pb-12">
       <div className="mx-auto px-6">
         {/* Hero Section */}
         <div className="mb-12">
