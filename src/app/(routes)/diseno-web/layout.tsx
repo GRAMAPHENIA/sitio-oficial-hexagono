@@ -2,6 +2,12 @@
 import { ReactNode } from "react";
 import Topbar from "@/components/custom/TopBar";
 import { Footer } from "@/components/custom/footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Diseño Web",
+  description: "Creado por Hexágono",
+};
 
 interface SEOLayoutProps {
   children: ReactNode;
