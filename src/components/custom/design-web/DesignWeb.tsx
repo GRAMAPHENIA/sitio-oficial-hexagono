@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { vollkorn } from "@/styles/fonts";
 import Image from "next/image";
-import { CheckCircle } from "lucide-react"; // Importa el ícono CheckCircle
+import { CheckCircle } from "lucide-react"; 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 import { useRouter } from "next/navigation";
@@ -12,7 +12,7 @@ const DesignWeb = () => {
   const router = useRouter();
 
   const handleConsultation = () => {
-    router.push("/#contact-form"); // Añade el ID del formulario a la URL
+    router.push("/#contact-form"); 
   };
 
   return (
@@ -31,7 +31,7 @@ const DesignWeb = () => {
             reflejan la esencia de tu marca y contribuyen al crecimiento de tu
             negocio.
           </p>
-          <section className="mb-8">
+          <section className="mb-20 ">
             <Image
               src="/features/icono-computadora-mouse.svg"
               alt="Ícono de Computadora y Mouse"
