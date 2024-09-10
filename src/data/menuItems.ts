@@ -12,20 +12,20 @@ export const menuItems: MenuItemProps[] = [
     ],
   },
   {
-    label: "Servicios",
+    label: "Caracteristicas",
     links: [
       {
-        href: "/services/web-design",
+        href: "/diseno-web",
         title: "Diseño Web",
         description: "Descubre nuestros servicios de diseño web.",
       },
       {
-        href: "/services/custom-development",
+        href: "/desarrollo-a-medida",
         title: "Desarrollo a Medida",
         description: "Soluciones personalizadas para tu negocio.",
       },
       {
-        href: "/services/seo",
+        href: "/seo",
         title: "SEO",
         description: "Mejora la visibilidad de tu sitio web.",
       },
