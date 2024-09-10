@@ -7,11 +7,17 @@ import { useContactForm } from "@/hooks/useContactForm";
 import { vollkorn } from "@/styles/fonts";
 
 export default function ContactForm() {
-  const { register, handleReactHookSubmit, errors, onSubmit, submitting } = useContactForm();
+  const { register, handleReactHookSubmit, errors, onSubmit, submitting } =
+    useContactForm();
 
   return (
-    <section className="m-auto text-center lg:rounded-t-md border border-input px-4 lg:w-full text-sm bg-white dark:bg-[#13141A] shadow-lg py-12 mt-24">
-      <h2 className={`${vollkorn.className} text-7xl font-black text-slate-600 text-center`}>
+    <section
+      id="contact-form"
+      className="m-auto text-center lg:rounded-t-md border border-input px-4 lg:w-full text-sm bg-white dark:bg-[#13141A] shadow-lg py-12 mt-24"
+    >
+      <h2
+        className={`${vollkorn.className} text-7xl font-black text-slate-600 text-center`}
+      >
         Contacto
       </h2>
       <p className="text-2xl text-gray-500 dark:text-slate-300 font-light mb-16 text-center">

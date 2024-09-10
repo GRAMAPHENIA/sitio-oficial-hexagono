@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import { Button } from "@/components/ui/button";
 import { vollkorn } from "@/styles/fonts";
@@ -8,7 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 import { useRouter } from "next/navigation";
 
-const CustomDevelopment = () => {
+const SEO = () => {
   const router = useRouter();
 
   const handleConsultation = () => {
@@ -23,17 +23,17 @@ const CustomDevelopment = () => {
           <h1
             className={`${vollkorn.className} text-4xl lg:text-9xl font-extrabold text-slate-800 dark:text-slate-200 mb-6 my-20`}
           >
-            Desarrollo
+            SEO
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
-            Soluciones personalizadas para tu negocio. Nos especializamos en
-            desarrollar aplicaciones y funcionalidades a medida que se alinean
-            perfectamente con los objetivos de tu empresa.
+            Optimización para Motores de Búsqueda. Mejoramos la visibilidad de
+            tu sitio web en los resultados de búsqueda, aumentando su tráfico y
+            posicionamiento en Google y otros buscadores.
           </p>
           <section className="mb-8">
             <Image
-              src="/features/icono-plano-regla-lapiz.svg"
-              alt="Ícono de Código"
+              src="/features/icono-seo.svg"
+              alt="Ícono de SEO"
               width={300}
               height={300}
               className="rounded-full border border-slate-300 dark:border-slate-500 mx-auto shadow-md"
@@ -48,15 +48,15 @@ const CustomDevelopment = () => {
               <CardTitle
                 className={`${vollkorn.className} text-4xl lg:text-6xl font-extrabold text-slate-800 dark:text-slate-200 mb-6`}
               >
-                Desarrollo Personalizado
+                Posicionamiento en Buscadores
               </CardTitle>
             </CardHeader>
             <CardContent className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
               <p>
-                Adaptamos cada proyecto a las necesidades específicas de tu
-                negocio. Desde funcionalidades únicas hasta integraciones
-                complejas, creamos soluciones que se ajustan a tus requisitos
-                exactos y aportan valor real.
+                Implementamos estrategias avanzadas de SEO para mejorar la
+                visibilidad de tu sitio web en los motores de búsqueda, lo que
+                resulta en un aumento de tráfico orgánico y mejores posiciones
+                en Google.
               </p>
             </CardContent>
           </Card>
@@ -65,23 +65,23 @@ const CustomDevelopment = () => {
         {/* Ventajas de Nuestro Enfoque */}
         <div className="text-center mb-12 py-12">
           <h2
-            className={`${vollkorn.className} text-4xl lg:text-6xl font-extrabold text-slate-800 dark:text-slate-200 mb-12 max-w-5xl`}
+            className={`${vollkorn.className} text-4xl lg:text-6xl font-extrabold text-slate-800 dark:text-slate-200 mb-12 max-w-4xl`}
           >
-            Ventajas de nuestro enfoque para el desarrollo a medida
+            Ventajas de nuestro enfoque para SEO
           </h2>
           <ul className="flex flex-col list-none space-y-4 max-w-2xl items-center justify-center mx-auto py-12 gap-y-10">
             <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center p-6 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0">
               <CheckCircle className="text-stone-500 h-20 w-20" />
-              <section className="pt-10 pb-20">
+              <section className="pt-10 pb-20 ">
                 <span
                   className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}
                 >
-                  Soluciones Adaptadas:
+                  Mayor Visibilidad:
                 </span>
                 <p>
-                  Cada funcionalidad es creada para satisfacer tus necesidades
-                  específicas, asegurando que cada detalle esté alineado con tus
-                  objetivos.
+                  Aumentamos la presencia de tu sitio web en los motores de
+                  búsqueda, lo que mejora significativamente su exposición y
+                  alcance.
                 </p>
               </section>
             </li>
@@ -91,11 +91,12 @@ const CustomDevelopment = () => {
                 <span
                   className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}
                 >
-                  Escalabilidad y Flexibilidad:
+                  Incremento de Tráfico Orgánico:
                 </span>
                 <p>
-                  Nuestros desarrollos permiten la expansión y adaptación
-                  conforme a la evolución de tu negocio.
+                  Nuestras técnicas de SEO están diseñadas para atraer más
+                  visitantes relevantes, mejorando el tráfico sin necesidad de
+                  publicidad pagada.
                 </p>
               </section>
             </li>
@@ -105,11 +106,12 @@ const CustomDevelopment = () => {
                 <span
                   className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}
                 >
-                  Integraciones Efectivas:
+                  Optimización Continua:
                 </span>
                 <p>
-                  Implementamos integraciones con herramientas y sistemas
-                  existentes para maximizar la eficiencia.
+                  Nos encargamos de actualizar y ajustar continuamente tu
+                  estrategia de SEO para adaptarla a las nuevas tendencias y
+                  algoritmos.
                 </p>
               </section>
             </li>
@@ -125,4 +127,4 @@ const CustomDevelopment = () => {
   );
 };
 
-export default CustomDevelopment;
+export default SEO;

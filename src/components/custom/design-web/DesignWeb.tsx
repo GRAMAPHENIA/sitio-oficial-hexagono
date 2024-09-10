@@ -1,10 +1,20 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { vollkorn } from "@/styles/fonts";
 import Image from "next/image";
 import { CheckCircle } from "lucide-react"; // Importa el ícono CheckCircle
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
+import { useRouter } from "next/navigation";
+
 const DesignWeb = () => {
+  const router = useRouter();
+
+  const handleConsultation = () => {
+    router.push("/#contact-form"); // Añade el ID del formulario a la URL
+  };
+
   return (
     <section className="flex flex-col items-center mx-auto text-center pb-12">
       <div className="mx-auto px-6">
@@ -63,7 +73,9 @@ const DesignWeb = () => {
             <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center p-6 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0">
               <CheckCircle className="text-stone-500 h-20 w-20" />
               <section className="pt-10 pb-20">
-                <span className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}>
+                <span
+                  className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}
+                >
                   Diseño Atractivo y Funcional:
                 </span>
                 <p>
@@ -76,7 +88,9 @@ const DesignWeb = () => {
             <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center p-6 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0">
               <CheckCircle className="text-stone-500 h-20 w-20" />
               <section className="pt-10 pb-20">
-                <span className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}>
+                <span
+                  className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}
+                >
                   Optimización para Conversión:
                 </span>
                 <p>
@@ -89,7 +103,9 @@ const DesignWeb = () => {
             <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center p-6 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0">
               <CheckCircle className="text-stone-500 h-20 w-20" />
               <section className="pt-10 pb-20">
-                <span className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}>
+                <span
+                  className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}
+                >
                   Experiencia de Usuario Excepcional:
                 </span>
                 <p>
@@ -103,7 +119,9 @@ const DesignWeb = () => {
         </div>
 
         {/* CTA Final */}
-        <Button>Solicita una consulta gratuita</Button>
+        <Button onClick={handleConsultation}>
+          Solicita una consulta gratuita
+        </Button>
       </div>
     </section>
   );
