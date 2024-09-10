@@ -20,7 +20,7 @@ export default function ContactForm() {
       >
         Contacto
       </h2>
-      <p className="text-2xl text-gray-500 dark:text-slate-300 font-light mb-16 text-center">
+      <p className="text-xl text-gray-500 dark:text-gray-300 mb-16">
         Póngase en contacto con nosotros.
       </p>
       <form
