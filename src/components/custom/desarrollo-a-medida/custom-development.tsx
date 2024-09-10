@@ -59,31 +59,43 @@ const CustomDevelopment = () => {
           >
             Ventajas de nuestro enfoque para el desarrollo a medida
           </h2>
-          <ul className="flex flex-col list-none space-y-4 max-w-2xl items-center justify-center mx-auto py-12">
-            <CheckCircle className="text-stone-500 h-20 w-20" />
-            <li className="text-stone-700 dark:text-stone-300">
-              <span className="text-stone-700 dark:text-stone-50 text-xl text-left">
-                Soluciones Adaptadas:
-              </span>{" "}
-              Cada funcionalidad es creada para satisfacer tus necesidades
-              específicas, asegurando que cada detalle esté alineado con tus
-              objetivos.
+          <ul className="flex flex-col list-none space-y-4 max-w-2xl items-center justify-center mx-auto py-12 gap-y-10">
+            <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center p-6 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0">
+              <CheckCircle className="text-stone-500 h-20 w-20" />
+              <section className="pt-10 pb-20">
+                <span className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}>
+                  Soluciones Adaptadas:
+                </span>
+                <p>
+                  Cada funcionalidad es creada para satisfacer tus necesidades
+                  específicas, asegurando que cada detalle esté alineado con tus
+                  objetivos.
+                </p>
+              </section>
             </li>
-            <CheckCircle className="text-stone-500 h-20 w-20" />
-            <li className="text-stone-700 dark:text-stone-300">
-              <span className="text-stone-700 dark:text-stone-50 text-xl text-left">
-                Escalabilidad y Flexibilidad:
-              </span>{" "}
-              Nuestros desarrollos permiten la expansión y adaptación conforme
-              a la evolución de tu negocio.
-            </li>{" "}
-            <CheckCircle className="text-stone-500 h-20 w-20" />
-            <li className="text-stone-700 dark:text-stone-300">
-              <span className="text-stone-700 dark:text-stone-50 text-xl text-left">
-                Integraciones Efectivas:
-              </span>{" "}
-              Implementamos integraciones con herramientas y sistemas existentes
-              para maximizar la eficiencia.
+            <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center p-6 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0">
+              <CheckCircle className="text-stone-500 h-20 w-20" />
+              <section className="pt-10 pb-20">
+                <span className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}>
+                  Escalabilidad y Flexibilidad:
+                </span>
+                <p>
+                  Nuestros desarrollos permiten la expansión y adaptación
+                  conforme a la evolución de tu negocio.
+                </p>
+              </section>
+            </li>
+            <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center p-6 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0">
+              <CheckCircle className="text-stone-500 h-20 w-20" />
+              <section className="pt-10 pb-20">
+                <span className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}>
+                  Integraciones Efectivas:
+                </span>
+                <p>
+                  Implementamos integraciones con herramientas y sistemas existentes
+                  para maximizar la eficiencia.
+                </p>
+              </section>
             </li>
           </ul>
         </div>

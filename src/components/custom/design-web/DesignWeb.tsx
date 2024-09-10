@@ -59,39 +59,50 @@ const DesignWeb = () => {
           >
             Ventajas de nuestro enfoque para diseñar sitios web
           </h2>
-          <ul className="flex flex-col list-none space-y-4 max-w-2xl items-center justify-center mx-auto py-12">
-            <CheckCircle className="text-stone-500 h-20 w-20" />
-            <li className=" text-stone-700 dark:text-stone-300">
-              <span className="text-stone-700 dark:text-stone-50 text-xl text-left">
-                Diseño Atractivo y Funcional:
-              </span>{" "}
-              Nos aseguramos de que cada elemento del sitio no solo sea
-              visualmente atractivo, sino también funcional y alineado con las
-              metas de tu negocio.
+          <ul className="flex flex-col list-none space-y-4 max-w-2xl items-center justify-center mx-auto py-12 gap-y-10">
+            <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center p-6 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0">
+              <CheckCircle className="text-stone-500 h-20 w-20" />
+              <section className="pt-10 pb-20">
+                <span className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}>
+                  Diseño Atractivo y Funcional:
+                </span>
+                <p>
+                  Nos aseguramos de que cada elemento del sitio no solo sea
+                  visualmente atractivo, sino también funcional y alineado con
+                  las metas de tu negocio.
+                </p>
+              </section>
             </li>
-            <CheckCircle className="text-stone-500 h-20 w-20" />
-            <li className=" text-stone-700 dark:text-stone-300">
-              <span className="text-stone-700 dark:text-stone-50 text-xl text-left">
-                Optimización para Conversión:
-              </span>{" "}
-              Implementamos estrategias de diseño que maximizan la conversión de
-              visitantes en clientes, adaptando el diseño a tus objetivos de
-              negocio.
-            </li>{" "}
-            <CheckCircle className="text-stone-500 h-20 w-20" />
-            <li className=" text-stone-700 dark:text-stone-300">
-              <span className="text-stone-700 dark:text-stone-50 text-xl text-left">
-                Experiencia de Usuario Excepcional:
-              </span>{" "}
-              Enfocamos nuestros esfuerzos en crear una experiencia de usuario
-              fluida y agradable, facilitando la navegación y el acceso a la
-              información.
+            <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center p-6 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0">
+              <CheckCircle className="text-stone-500 h-20 w-20" />
+              <section className="pt-10 pb-20">
+                <span className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}>
+                  Optimización para Conversión:
+                </span>
+                <p>
+                  Implementamos estrategias de diseño que maximizan la
+                  conversión de visitantes en clientes, adaptando el diseño a
+                  tus objetivos de negocio.
+                </p>
+              </section>
+            </li>
+            <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center p-6 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0">
+              <CheckCircle className="text-stone-500 h-20 w-20" />
+              <section className="pt-10 pb-20">
+                <span className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}>
+                  Experiencia de Usuario Excepcional:
+                </span>
+                <p>
+                  Enfocamos nuestros esfuerzos en crear una experiencia de
+                  usuario fluida y agradable, facilitando la navegación y el
+                  acceso a la información.
+                </p>
+              </section>
             </li>
           </ul>
         </div>
 
         {/* CTA Final */}
-
         <Button>Solicita una consulta gratuita</Button>
       </div>
     </section>
