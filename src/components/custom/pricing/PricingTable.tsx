@@ -17,7 +17,7 @@ export default function PricingTable() {
         Planes
       </h2>
       <p className="text-xl text-gray-500 dark:text-gray-300 max-w-sm md:max-w-md lg:max-w-lg mb-16">
-        Elige el plan perfecto para vos: opciones flexibles adaptadas a tus
+        Elegí el plan perfecto para vos: opciones flexibles adaptadas a tus
         necesidades y presupuesto.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
