@@ -3,7 +3,7 @@ import { PricingPlan } from "@/types/pricing";
 export const pricingPlans: PricingPlan[] = [
   {
     title: "Landing page",
-    price: "$173.000",
+    price: "$175.000",
     description: "Incluye diseño básico, 1 página.",
     features: [
       "Sitio web de una página",
@@ -14,7 +14,7 @@ export const pricingPlans: PricingPlan[] = [
   },
   {
     title: "Sitio Web Corporativo",
-    price: "$346.000",
+    price: "$350.000",
     description: "Incluye diseño avanzado y hasta 5 páginas.",
     features: [
       "Hasta 5 páginas",

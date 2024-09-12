@@ -1,6 +1,6 @@
-import { Vollkorn } from "next/font/google";
 import { pricingPlans } from "@/data/pricingPlans";
 import PricingCard from "./PricingCard";
+import { Vollkorn } from "next/font/google";
 
 // Configuración de la fuente Vollkorn
 const vollkorn = Vollkorn({
