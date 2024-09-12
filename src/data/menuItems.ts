@@ -32,10 +32,27 @@ export const menuItems: MenuItemProps[] = [
     ],
   },
   {
+    label: "Servicios",
+    links: [
+      {
+        href: "/hosting",
+        title: "Hosting",
+        description:
+          "Servicio de hosting para asegurar que tu sitio web esté disponible en todo momento.",
+      },
+      {
+        href: "/dominio",
+        title: "Dominio",
+        description:
+          "Registro y gestión de dominios para que tu marca tenga presencia en Internet.",
+      },
+    ],
+  },
+  {
     label: "Acerca de",
     links: [
       {
-        href: "/about",
+        href: "/sobre-nosotros",
         title: "Sobre Nosotros",
         description: "Conoce más sobre nuestro equipo y misión.",
       },
@@ -45,7 +62,7 @@ export const menuItems: MenuItemProps[] = [
     label: "Contacto",
     links: [
       {
-        href: "/contact",
+        href: "/#contact-form",
         title: "Contacto",
         description: "Ponte en contacto con nosotros para más información.",
       },

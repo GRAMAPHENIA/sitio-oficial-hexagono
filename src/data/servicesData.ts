@@ -1,20 +1,19 @@
-// src/data/servicesData.ts
-import { Service } from '@/types/servicesTypes';
+import { ServiceCategory } from "@/types/services";
 
-export const servicesData: Service[] = [
-  {
-    title: 'Diseño Web',
-    description: 'Crea sitios web visualmente atractivos y funcionales.',
-    link: '/servicios/diseno-web',
-  },
-  {
-    title: 'Desarrollo a Medida',
-    description: 'Soluciones únicas para tus necesidades específicas.',
-    link: '/servicios/desarrollo-a-medida',
-  },
-  {
-    title: 'SEO',
-    description: 'Mejora la visibilidad de tu sitio web y alcanza más clientes.',
-    link: '/servicios/seo',
-  },
-];
+export const servicesData: ServiceCategory = {
+  label: "Servicios",
+  links: [
+    {
+      href: "/hosting",
+      title: "Hosting",
+      description:
+        "El servicio de hosting es el lugar donde tu sitio web vive en Internet. Con nuestro hosting confiable y rápido, tu página estará siempre disponible para tus usuarios. Incluimos soporte técnico y una configuración optimizada para tu sitio.",
+    },
+    {
+      href: "/dominio",
+      title: "Dominio",
+      description:
+        "El dominio es la dirección web que tus clientes utilizarán para encontrarte (ejemplo: www.tunegocio.com). Nosotros te ayudamos a elegir y registrar el dominio perfecto para tu marca, asegurando tu presencia en línea.",
+    },
+  ],
+};

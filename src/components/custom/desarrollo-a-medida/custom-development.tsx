@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { vollkorn } from "@/styles/fonts";
 import Image from "next/image";
-import { CheckCircle } from "lucide-react"; // Importa el ícono CheckCircle
+import { Link,  Layers3, Puzzle } from "lucide-react"; // Importa el ícono CheckCircle
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 import { useRouter } from "next/navigation";
@@ -12,7 +12,7 @@ const CustomDevelopment = () => {
   const router = useRouter();
 
   const handleConsultation = () => {
-    router.push("/#contact-form"); // Añade el ID del formulario a la URL
+    router.push("/#contact-form");
   };
 
   return (
@@ -70,8 +70,8 @@ const CustomDevelopment = () => {
             Ventajas de nuestro enfoque para el desarrollo a medida
           </h2>
           <ul className="flex flex-col list-none space-y-4 max-w-2xl items-center justify-center mx-auto py-12 gap-y-10">
-            <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center p-6 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0">
-              <CheckCircle className="text-stone-500 h-20 w-20" />
+            <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center p-6 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0 bg-white dark:bg-card">
+              <Puzzle  className="text-stone-500 h-20 w-20" />
               <section className="pt-10 pb-20">
                 <span
                   className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}
@@ -85,8 +85,8 @@ const CustomDevelopment = () => {
                 </p>
               </section>
             </li>
-            <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center p-6 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0">
-              <CheckCircle className="text-stone-500 h-20 w-20" />
+            <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center p-6 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0 bg-white dark:bg-card">
+              <Layers3 className="text-stone-500 h-20 w-20" />
               <section className="pt-10 pb-20">
                 <span
                   className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}
@@ -99,8 +99,8 @@ const CustomDevelopment = () => {
                 </p>
               </section>
             </li>
-            <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center p-6 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0">
-              <CheckCircle className="text-stone-500 h-20 w-20" />
+            <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center p-6 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0 bg-white dark:bg-card">
+              <Link  className="text-stone-500 h-20 w-20" />
               <section className="pt-10 pb-20">
                 <span
                   className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}

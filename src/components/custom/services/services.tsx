@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import ServicesSection from "./ServicesSection";
 
 const Services = () => {
   return (
-    <div>Services</div>
-  )
-}
+    <>
+      <ServicesSection />
+    </>
+  );
+};
 
-export default Services
+export default Services;
