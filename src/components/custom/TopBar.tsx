@@ -3,8 +3,6 @@
 import * as React from "react";
 import { useState } from "react";
 
-import { HamburgerMenuIcon } from "@radix-ui/react-icons";
-
 import { ModeToggle } from "@/components/custom/ModeToggle";
 
 import Image from "next/image";
@@ -12,6 +10,7 @@ import { menuItems } from "@/data/menuItems";
 import { ListItem } from "@/components/custom/ListItem";
 
 import { NavigationMenu } from "../ui/navigation-menu";
+import MobileMenu from "./menu-mobile/MobileMenu";
 
 export default function Topbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,14 +21,6 @@ export default function Topbar() {
         <Image height={40} width={40} src={"/brand/logo.svg"} alt="Logo" />
       </div>
 
-      {/* Ícono de menú para dispositivos móviles */}
-      <button
-        className="lg:hidden flex items-center"
-        onClick={() => setMenuOpen(!menuOpen)}
-      >
-        <HamburgerMenuIcon className="h-6 w-6" />
-      </button>
-
       {/* Menú para dispositivos grandes */}
       <div className="hidden lg:flex flex-1 justify-center list-none ">
         <NavigationMenu>
@@ -39,16 +30,12 @@ export default function Topbar() {
         </NavigationMenu>
       </div>
 
-      {/* Menú para dispositivos móviles */}
-      {menuOpen && (
-        <div className="lg:hidden absolute top-16 left-0 w-full bg-white dark:bg-card p-4 list-none">
-          <NavigationMenu>
-            {menuItems.map((item, index) => (
-              <ListItem key={index} item={item} />
-            ))}
-          </NavigationMenu>
-        </div>
-      )}
+      <div
+        className="lg:hidden flex items-center"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        <MobileMenu />
+      </div>
 
       <ModeToggle />
     </div>
