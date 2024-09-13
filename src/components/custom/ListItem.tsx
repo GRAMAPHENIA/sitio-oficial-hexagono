@@ -10,11 +10,11 @@ import Link from "next/link";
 export const ListItem = ({ item }: { item: MenuItemProps }) => {
   return (
     <NavigationMenuItem>
-      <NavigationMenuTrigger className="bg-white dark:bg-card">
+      <NavigationMenuTrigger className="bg-white dark:bg-card ">
         {item.label}
       </NavigationMenuTrigger>
       <NavigationMenuContent>
-        <ul className="grid gap-3 p-6 md:w-[300px] lg:w-[400px]">
+        <ul className="grid gap-3 p-6 md:w-[300px] lg:w-[520px]">
           {item.links.map((link, index) => (
             <li key={index}>
               <Link
