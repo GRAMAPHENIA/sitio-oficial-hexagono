@@ -7,7 +7,7 @@ import { User, Globe, Target } from "lucide-react"; // Importa los íconos neces
 
 const AboutUs = () => {
   return (
-    <section className="flex flex-col items-center mx-auto text-center pb-12">
+    <section className="flex flex-col items-center mx-auto text-center">
       <div className="mx-auto px-6">
         {/* Hero Section */}
         <div className="">
@@ -71,7 +71,7 @@ const AboutUs = () => {
           >
             Nuestra Misión
           </h2>
-          <ul className="flex flex-col list-none space-y-4 max-w-2xl items-center justify-center mx-auto py-12 gap-y-10">
+          <ul className="flex flex-col list-none space-y-4 max-w-2xl items-center justify-center mx-auto pt-12 gap-y-10">
             <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center p-6 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0 bg-white dark:bg-card">
               <User className="text-stone-500 h-20 w-20" />
               <section className="pt-10 pb-20">

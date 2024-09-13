@@ -3,7 +3,7 @@ import { Globe, ShieldCheck, Link2 } from "lucide-react";
 
 const Dominio = () => {
   return (
-    <section className="flex flex-col items-center mx-auto text-center pb-12">
+    <section className="flex flex-col items-center mx-auto text-center">
       <div className="mx-auto px-6">
         <h1
           className={`${vollkorn.className} text-4xl lg:text-9xl font-extrabold text-slate-800 dark:text-slate-200 mb-6 my-20`}
@@ -25,7 +25,7 @@ const Dominio = () => {
         >
           Ventajas de nuestro servicio de Dominio
         </h2>
-        <ul className="flex flex-col list-none space-y-4 max-w-2xl items-center justify-center mx-auto py-12 gap-y-10">
+        <ul className="flex flex-col list-none space-y-4 max-w-2xl items-center justify-center mx-auto pt-12 gap-y-10">
           <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center p-6 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0  bg-white dark:bg-card">
             <ShieldCheck className="text-stone-500 h-20 w-20" />
             <section className="pt-10 pb-20 ">
