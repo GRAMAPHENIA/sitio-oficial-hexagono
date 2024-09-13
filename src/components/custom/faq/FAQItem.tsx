@@ -12,7 +12,7 @@ interface FAQItemProps {
 export default function FAQItem({ item }: FAQItemProps) {
   return (
     <AccordionItem value={item.value}>
-      <AccordionTrigger>{item.question}</AccordionTrigger>
+      <AccordionTrigger className="text-left">{item.question}</AccordionTrigger>
       <AccordionContent>{item.answer}</AccordionContent>
     </AccordionItem>
   );

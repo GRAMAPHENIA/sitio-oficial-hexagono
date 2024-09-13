@@ -11,7 +11,7 @@ export default function FAQ() {
       >
         Preguntas Frecuentes
       </h2>
-      <div className="w-[350px] lg:w-[600px] pt-16">
+      <div className="w-[350px] lg:w-[600px] pt-16 ">
         <Accordion type="single" collapsible>
           {faqItems.map((item) => (
             <FAQItem key={item.value} item={item} />
