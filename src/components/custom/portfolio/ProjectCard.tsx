@@ -1,7 +1,8 @@
-// src/components/ProjectCard.tsx
 import Image from "next/image";
+import Link from "next/link";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import type { Project } from "@/types/portfolio";
+import { Button } from "@/components/ui/button";
 
 interface ProjectCardProps {
   project: Project;
@@ -24,6 +25,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         />
         <CardTitle className="mt-4">{project.title}</CardTitle>
         <p className="text-gray-600">{project.description}</p>
+
+        {/* El botón ahora usa Link directamente con el href del proyecto */}
+        <Link href={project.url} target="_blank" rel="noopener noreferrer" passHref>
+          <Button className="mt-10">Ver sitio</Button>
+        </Link>
       </CardContent>
     </Card>
   );
