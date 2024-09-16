@@ -3,23 +3,23 @@ import type { Testimonial } from "@/types/testimonial";
 export const mockTestimonials: Testimonial[] = [
   {
     quote:
-      "Hexágono hizo un trabajo excelente en el diseño de nuestro sitio web. La atención al detalle y el profesionalismo fueron excepcionales.",
-    name: "Juan Pérez",
-    position: "CEO, Empresa XYZ",
+      "Ahora tengo un sitio web que refleja la calidad de mis instrumentos y atrae más clientes. El diseño es profesional y funcional.",
+    name: "Esteban Di corato",
+    position: "Luthier",
     avatarUrl: "https://example.com/avatar1.jpg",
   },
   {
     quote:
-      "Estamos encantados con el servicio y el producto final. Altamente recomendados.",
-    name: "María López",
-    position: "Directora, Empresa ABC",
+      "Gracias a Hexagono, ahora tenemos una web clara y fácil de usar. Nos ha ayudado a llegar a más adultos mayores y facilitar las inscripciones",
+    name: "Ana T. de León",
+    position: "Lic. en enfermeria",
     avatarUrl: "https://example.com/avatar2.jpg",
   },
   {
     quote:
-      "La experiencia con Hexágono fue de primera clase. Superaron nuestras expectativas en todos los aspectos.",
-    name: "Carlos Martínez",
-    position: "Gerente, Empresa 123",
+      "Hexagono nos ayudó a crear una web atractiva y fácil de navegar. Ahora más clientes pueden descubrir y comprar nuestras artesanías en línea con facilidad.",
+    name: "Nora Makovitz",
+    position: "Artesana",
     avatarUrl: "https://example.com/avatar3.jpg",
   },
 ];
