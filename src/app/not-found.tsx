@@ -4,7 +4,6 @@ import { Special_Elite } from "next/font/google";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 
-// Instancia la fuente Special_Elite
 const specialElite = Special_Elite({
   weight: "400",
   subsets: ["latin"],
