@@ -25,9 +25,9 @@ export default function NotFound() {
           404
         </h2>
         <p
-          className={`${specialElite.className} lg:text-xl text-slate-800 dark:text-slate-200 text-center `}
+          className={`${specialElite.className} lg:text-xl text-slate-800 dark:text-slate-200 text-center`}
         >
-          Lo sentimos, pero no pudimos encontrar la página solicitada.
+          Lo lamentamos, pero no pudimos encontrar la página que solicitaste.
         </p>
         <Button onClick={handleConsultation} className="mt-10">
           Volver a Hexágono
