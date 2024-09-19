@@ -16,7 +16,7 @@ export default function TestimonialsSection() {
       </h2>
       {/* Descripción de la sección */}
       <p className="text-xl text-gray-500 dark:text-gray-300 max-w-sm md:max-w-md lg:max-w-lg mb-16">
-        Escucha lo que nuestros clientes tienen que decir sobre su experiencia
+        Descubrí lo que nuestros clientes tienen para decir sobre su experiencia
         con nuestros servicios.
       </p>
       {/* Contenedor de los testimonios */}
