@@ -17,9 +17,9 @@ export default function Header() {
   };
 
   return (
-    <header className="flex flex-col items-center justify-center bg-white  dark:bg-card text-center  py-28 border-b border-black/20 shadow-xl ">
+    <header className="flex flex-col items-center justify-center bg-white dark:bg-card text-center  py-28 border-b border-black/20 shadow-md">
       <h1
-        className={`${merriweather.className} text-3xl lg:text-7xl font-black text-gray-800 dark:text-gray-400 lg:mb-6`}
+        className={`${merriweather.className} text-2xl lg:text-7xl font-black text-gray-800 dark:text-gray-400 mb-2 lg:mb-6`}
       >
         Crea tu sitio web con
       </h1>
@@ -28,7 +28,7 @@ export default function Header() {
       >
         Hexágono
       </span>
-      <p className="text-xl text-gray-500 dark:text-gray-300 max-w-sm md:max-w-md lg:max-w-lg mb-16">
+      <p className="lg:text-xl text-gray-500 dark:text-gray-300 max-w-72 md:max-w-md lg:max-w-lg mb-16">
         Ofrecemos soluciones de diseño y desarrollo web para impulsar tu
         negocio.
       </p>
