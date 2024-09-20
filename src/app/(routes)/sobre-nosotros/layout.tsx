@@ -5,7 +5,7 @@ import { Footer } from "@/components/custom/footer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Desarrollo a medida",
+  title: "Nuestro Equipo",
   description: "Creado por Hexágono",
 };
 

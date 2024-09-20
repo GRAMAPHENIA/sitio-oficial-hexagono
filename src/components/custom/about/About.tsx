@@ -2,8 +2,7 @@
 
 import { vollkorn } from "@/styles/fonts";
 import Image from "next/image";
-import { User, Globe, Target } from "lucide-react"; // Importa los íconos necesarios
-// import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { User, Globe, Target } from "lucide-react";
 
 const AboutUs = () => {
   return (
@@ -24,45 +23,15 @@ const AboutUs = () => {
           <div className="grid lg:grid-cols-1">
             <section className="mb-8">
               <Image
-                src="/about/about-keyboard.png"
+                src="about/teclado-about.svg"
                 alt="Ícono del Equipo"
                 width={300}
                 height={300}
                 className="rounded-full border border-slate-300 dark:border-slate-500 mx-auto shadow-md"
               />
             </section>
-            {/* <section className="mb-8">
-              <Image
-                src="/about/"
-                alt="Ícono del Equipo"
-                width={300}
-                height={300}
-                className="rounded-full border border-slate-300 dark:border-slate-500 mx-auto shadow-md"
-              />
-            </section> */}
           </div>
         </div>
-
-        {/* Información del Equipo */}
-        {/* <section className="max-w-3xl mx-auto mb-12 py-12">
-          <Card className="p-6 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg">
-            <CardHeader>
-              <CardTitle
-                className={`${vollkorn.className} text-4xl lg:text-6xl font-extrabold text-slate-800 dark:text-slate-200 mb-6`}
-              >
-                Nuestro Equipo
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
-              <p>
-                Contamos con un equipo diverso y altamente calificado que
-                combina experiencia técnica con creatividad. Cada miembro aporta
-                un conjunto único de habilidades y perspectivas para garantizar
-                que cada proyecto sea un éxito.
-              </p>
-            </CardContent>
-          </Card>
-        </section> */}
 
         {/* Nuestra Misión */}
         <div className="text-center mb-12 py-12">
