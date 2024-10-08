@@ -1,11 +1,13 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { vollkorn } from "@/styles/fonts";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+
+import { vollkorn } from "@/styles/fonts";
+
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-import { useRouter } from "next/navigation";
 
 const DesignWeb = () => {
   const router = useRouter();
@@ -122,7 +124,7 @@ const DesignWeb = () => {
                 <span
                   className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}
                 >
-                  Experiencia de Usuario Excepcional:
+                  Experiencia de Usuario:
                 </span>
                 <p>
                   Enfocamos nuestros esfuerzos en crear una experiencia de

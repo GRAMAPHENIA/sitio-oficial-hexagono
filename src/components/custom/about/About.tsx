@@ -16,9 +16,7 @@ const AboutUs = () => {
             Nuestro Equipo
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
-            Nuestro equipo está compuesto por profesionales apasionados y
-            dedicados que trabajan con un objetivo en mente: proporcionar
-            soluciones excepcionales que impulsen el éxito de tu negocio.
+            Nuestro equipo está compuesto por personas que trabajan con un objetivo en mente: proporcionar soluciones que impulsen <span className="font-bold"> el éxito de tu negocio.</span>
           </p>
           <div className="grid lg:grid-cols-1">
             <section className="mb-8">
@@ -51,8 +49,8 @@ const AboutUs = () => {
                 </span>
                 <p>
                   Nos dedicamos a entender y satisfacer las necesidades de
-                  nuestros clientes para ofrecer soluciones que realmente hagan
-                  la diferencia.
+                  nuestros clientes para ofrecer soluciones que realmente hagan 
+                  <span className="font-bold"> la diferencia.</span>
                 </p>
               </section>
             </li>
@@ -66,8 +64,7 @@ const AboutUs = () => {
                 </span>
                 <p>
                   Nuestra misión es generar un impacto positivo y duradero a
-                  nivel global, ofreciendo soluciones innovadoras que aborden
-                  los desafíos del mundo moderno.
+                  nivel global, abordando los desafíos del <span className="font-bold">mundo moderno.</span> 
                 </p>
               </section>
             </li>
@@ -82,7 +79,7 @@ const AboutUs = () => {
                 <p>
                   Estamos comprometidos a entregar resultados que superen las
                   expectativas, utilizando estrategias basadas en datos y
-                  enfoques orientados a objetivos.
+                  enfoques orientados a <span className="font-bold">objetivos.</span>
                 </p>
               </section>
             </li>
