@@ -11,6 +11,7 @@ export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
   return (
     <Card className="p-6 shadow-md">
       <CardContent className="flex flex-col justify-between items-center h-full border p-4 rounded-lg">
+        {/* Renderizamos el Avatar usando la imagen desde testimonial.avatarUrl */}
         <Avatar src={testimonial.avatarUrl} name={testimonial.name} />
         <p className="text-lg text-gray-400 m-5">{testimonial.quote}</p>
         <div className="mt-4">

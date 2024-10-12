@@ -15,19 +15,20 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <Image
           src={project.imageSrc}
           alt={project.altText}
-          className="w-full h-40 m-auto"
+          className="w-full h-50 m-auto"
           width={400}
           height={400}
-          style={{
-            width: "300px",
-            height: "300px",
-          }}
         />
         <CardTitle className="mt-4">{project.title}</CardTitle>
         <p className="text-gray-600">{project.description}</p>
 
         {/* El botón ahora usa Link directamente con el href del proyecto */}
-        <Link href={project.url} target="_blank" rel="noopener noreferrer" passHref>
+        <Link
+          href={project.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          passHref
+        >
           <Button className="mt-10">Ver sitio</Button>
         </Link>
       </CardContent>

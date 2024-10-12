@@ -14,7 +14,7 @@ const vollkorn = Vollkorn({
 export default function PricingCard({ plan }: PricingCardProps) {
   return (
     <Card
-      className={`p-6 shadow-none lg:hover:shadow-md ${
+      className={`p-6 shadow-none lg:hover:shadow-md lg:hover:dark:shadow-zinc-800 transition-all ${
         plan.isPopular
           ? "lg:hover:shadow-md scale-105 "
           : plan.available
@@ -22,23 +22,24 @@ export default function PricingCard({ plan }: PricingCardProps) {
           : "bg-card "
       }`}
     >
-      <CardContent className="flex flex-col justify-between items-center h-full border p-4 rounded-lg">
+      <CardContent className="flex flex-col justify-between items-center h-full px-6">
         <div className="mb-auto">
           <CardTitle
             className={`${
               vollkorn.className
-            } mt-4 text-xl font-bold text-gray-500 dark:text-gray-300  ${
+            } flex justify-center items-end mt-4 text-center text-xl lg:text-4xl font-normal text-stone-400 dark:text-slate-300 ${
               plan.isPopular ? "text-2xl" : ""
             }`}
           >
             {plan.title}
           </CardTitle>
+
           {plan.available ? (
             <p
-              className={`text-3xl font-semibold mt-4 ${
+              className={`${vollkorn.className} text-3xl font-semibold mt-4 ${
                 plan.isPopular
-                  ? "text-gray-500 dark:text-gray-300 "
-                  : "text-gray-500 dark:text-gray-300 "
+                  ? "text-gray-500 dark:text-white "
+                  : "text-gray-500 dark:text-white "
               }`}
             >
               {plan.price}
