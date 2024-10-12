@@ -25,9 +25,9 @@ const CustomDevelopment = () => {
             Desarrollo
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
-            Soluciones personalizadas para tu negocio. Nos especializamos en
-            desarrollar aplicaciones y funcionalidades a medida que se alinean
-            perfectamente con los objetivos de tu empresa.
+            Soluciones personalizadas para tu negocio. Creamos aplicaciones y
+            funcionalidades a medida, ajustadas a los objetivos de
+            <span className="font-bold "> tu empresa</span>.
           </p>
           <section className="mb-8">
             <Image
@@ -122,8 +122,7 @@ const CustomDevelopment = () => {
                   Integraciones Efectivas:
                 </span>
                 <p>
-                  Implementamos integraciones con herramientas y sistemas
-                  existentes para maximizar la eficiencia.
+                Implementamos soluciones que se integran con tus herramientas y sistemas actuales para maximizar la eficiencia.
                 </p>
               </section>
             </li>
