@@ -9,15 +9,15 @@ interface FeatureCardProps {
 
 export default function FeatureCard({ feature }: FeatureCardProps) {
   return (
-    <Card className="p-6 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0">
+    <Card className="p-6 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0 ">
       <CardContent className="flex flex-col justify-center items-center text-center">
         <div className="mb-4">
           <Image
             src={feature.iconSrc}
             alt={feature.alt}
-            width={200}
-            height={200}
-            className="bg-slate-100 dark:bg-slate-600/10 rounded-full border border-slate-300 dark:border-slate-500"
+            width={300}
+            height={300}
+            className="bg-slate-200/60 dark:bg-slate-600/10 rounded-full border border-slate-300 dark:border-slate-500"
           />
         </div>
         <CardTitle
