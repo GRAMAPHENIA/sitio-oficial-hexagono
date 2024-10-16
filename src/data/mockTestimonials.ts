@@ -20,6 +20,6 @@ export const mockTestimonials: Testimonial[] = [
       "El landing page que crearon es sencillo y directo. Ahora los clientes entienden rápidamente lo que ofrecemos.",
     name: "Nora Makovitz",
     position: "Artesana",
-    avatarUrl: "/clients/avatar-she.webp",
+    avatarUrl: "/clients/avatar-she-another.webp",
   },
 ];

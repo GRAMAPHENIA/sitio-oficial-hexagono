@@ -27,18 +27,18 @@ const DesignWeb = () => {
             Diseño Web
           </h1>
           <section className="mb-20 ">
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Desarrollamos sitios web atractivos y funcionales para tu negocio.
             Nos especializamos en diseñar experiencias digitales únicas que
             reflejan la esencia de tu marca y contribuyen al crecimiento de tu
             negocio.
           </p>
             <Image
-              src="/features/icono-computadora-mouse.svg"
+              src="/features/icono-computadora-mouse.webp"
               alt="Ícono de Computadora y Mouse"
-              width={300}
-              height={300}
-              className="rounded-full border border-slate-300 dark:border-slate-500 mx-auto shadow-inner"
+              width={400}
+              height={400}
+              className="mx-auto"
             />
           </section>
         </div>
@@ -73,7 +73,7 @@ const DesignWeb = () => {
           <ul className="flex flex-col list-none space-y-4 max-w-2xl items-center justify-center mx-auto py-12 gap-y-10">
             <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center pt-20 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0 lg:px-10 bg-white dark:bg-card">
               <Image
-                src={"/web/diseno.webp"}
+                src={"/web/dis-web.webp"}
                 alt="Imagen de un icono de diseño."
                 width={100}
                 height={100}
@@ -94,7 +94,7 @@ const DesignWeb = () => {
             </li>
             <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center pt-20 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0 lg:px-10 bg-white dark:bg-card">
               <Image
-                src={"/web/conversion.webp"}
+                src={"/web/embudo.webp"}
                 alt="Imagen de un icono de conversion."
                 width={100}
                 height={100}
@@ -107,9 +107,7 @@ const DesignWeb = () => {
                   Optimización para Conversión:
                 </span>
                 <p>
-                  Implementamos estrategias de diseño que maximizan la
-                  conversión de visitantes en clientes, adaptando el diseño a
-                  tus objetivos de negocio.
+                Optimizamos el diseño de tu sitio web para convertir visitantes en clientes, ajustándolo estratégicamente a los objetivos de tu negocio.
                 </p>
               </section>
             </li>
