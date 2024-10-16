@@ -29,13 +29,13 @@ const CustomDevelopmentLayout = ({ children }: SEOLayoutProps) => {
         <meta property="og:description" content="Soluciones personalizadas de desarrollo web para transformar tu negocio." />
         <meta property="og:url" content="https://www.hexagono.xyz/desarrollo-a-medida" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/path-to-image.jpg" />
+        <meta property="og:image" content="/logo-hexagono.webp" />
 
         {/* Twitter Cards */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Desarrollo a Medida - Hexágono" />
         <meta name="twitter:description" content="Transforma tu negocio con nuestras soluciones de desarrollo web a medida." />
-        <meta name="twitter:image" content="/path-to-image.jpg" />
+        <meta name="twitter:image" content="/logo-hexagono.webp" />
       </Head>
 
       {/* Estructura principal del layout */}
