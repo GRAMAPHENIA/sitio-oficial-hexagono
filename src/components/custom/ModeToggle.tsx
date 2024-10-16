@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { useState, useEffect } from "react";
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 import { useTheme } from "next-themes";
 
@@ -8,11 +9,22 @@ import { Button } from "@/components/ui/button";
 
 export function ModeToggle() {
   const { theme, setTheme } = useTheme();
+  const [isMounted, setIsMounted] = useState(false);
+
+  // Asegura que el componente solo se renderice completamente en el cliente
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   // Función para alternar entre "light" y "dark"
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
+
+  // Si el componente no está montado, no renderizamos los iconos
+  if (!isMounted) {
+    return null; // Evita renderización incorrecta en el SSR
+  }
 
   return (
     <Button

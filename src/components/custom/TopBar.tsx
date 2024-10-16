@@ -18,7 +18,13 @@ export default function Topbar() {
   return (
     <div className="p-4 w-full flex justify-between items-center bg-white dark:bg-card">
       <div className="flex items-center">
-        <Image height={35} width={35} src={"/brand/logo-hexagono.webp"} alt="Logo" />
+        <Image
+          width={300}
+          height={300}
+          style={{ width: "30px", height: "auto" }} // Control del tamaño por CSS
+          src={"/brand/logo-hexagono.webp"}
+          alt="Logo"
+        />
       </div>
 
       {/* Menú para dispositivos grandes */}
