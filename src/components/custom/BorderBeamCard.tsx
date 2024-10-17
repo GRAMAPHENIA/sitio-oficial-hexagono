@@ -18,7 +18,7 @@ export default function BorderBeamCard({
       </div>
 
       {/* Card content */}
-      <Card className="absolute inset-[1.11px] shadow-md overflow-hidden bg-white dark:bg-card p-6 border border-slate-200 dark:border-slate-700 rounded-lg">
+      <Card className="absolute inset-[1.1px] shadow-md overflow-hidden bg-white dark:bg-card p-6 border border-slate-200 dark:border-slate-700 rounded-lg">
         <CardHeader className="bg-white dark:bg-card">
           <CardTitle
             className={`${vollkorn.className} text-4xl lg:text-6xl font-extrabold text-slate-800 dark:text-slate-200 mb-6`}

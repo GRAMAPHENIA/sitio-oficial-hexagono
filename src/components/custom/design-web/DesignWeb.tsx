@@ -6,7 +6,6 @@ import { useRouter } from "next/navigation";
 import { vollkorn } from "@/styles/fonts";
 
 import { Button } from "@/components/ui/button";
-// import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import BorderBeamCard from "../BorderBeamCard";
 
 const DesignWeb = () => {
@@ -44,30 +43,14 @@ const DesignWeb = () => {
         </div>
 
         {/* Característica Destacada Ventajas de Nuestro Enfoque */}
-        <section className="max-w-3xl mx-auto mb-12 py-12">
+        <section className="relative max-w-3xl mx-auto mb-12 py-12">
+          {/* Luz de fondo detrás del componente BorderBeamCard */}
+          <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500 via-slate-500 to-teal-600 opacity-0 dark:opacity-10 h-[400px] blur-[50px]"></div>
           <BorderBeamCard
             title="Diseño Personalizado"
-            content=" Cada proyecto es único, y por eso, tu sitio web debe serlo también. Creamos diseños personalizados que capturan la identidad de tu marca y se adaptan a tus objetivos comerciales."
+            content="Cada proyecto es único, y por eso, tu sitio web debe serlo también. Creamos diseños personalizados que capturan la identidad de tu marca y se adaptan a tus objetivos comerciales."
           />
         </section>
-        {/* <section className="max-w-3xl mx-auto mb-12 py-12">
-          <Card className="p-6 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg">
-            <CardHeader>
-              <CardTitle
-                className={`${vollkorn.className} text-4xl lg:text-6xl font-extrabold text-slate-800 dark:text-slate-200 mb-6`}
-              >
-                Diseño Personalizado
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
-              <p>
-                Cada proyecto es único, y por eso, tu sitio web debe serlo
-                también. Creamos diseños personalizados que capturan la
-                identidad de tu marca y se adaptan a tus objetivos comerciales.
-              </p>
-            </CardContent>
-          </Card>
-        </section> */}
 
         {/* Ventajas de Nuestro Enfoque */}
         <div className="text-center mb-12 py-12">
@@ -84,7 +67,6 @@ const DesignWeb = () => {
                 width={100}
                 height={100}
               />
-
               <section className="pt-10 pb-20">
                 <span
                   className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}
@@ -98,6 +80,7 @@ const DesignWeb = () => {
                 </p>
               </section>
             </li>
+
             <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center pt-20 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0 lg:px-10 bg-white dark:bg-card">
               <Image
                 src={"/web/embudo.webp"}
@@ -105,7 +88,6 @@ const DesignWeb = () => {
                 width={100}
                 height={100}
               />
-
               <section className="pt-10 pb-20">
                 <span
                   className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}
@@ -119,6 +101,7 @@ const DesignWeb = () => {
                 </p>
               </section>
             </li>
+
             <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center pt-20 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0 lg:px-10 bg-white dark:bg-card">
               <Image
                 src={"/web/experiencia-de-usuario.webp"}
