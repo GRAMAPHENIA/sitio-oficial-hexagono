@@ -6,8 +6,8 @@ import { useRouter } from "next/navigation";
 import { vollkorn } from "@/styles/fonts";
 
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-
+// import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import BorderBeamCard from "../BorderBeamCard";
 
 const DesignWeb = () => {
   const router = useRouter();
@@ -27,12 +27,12 @@ const DesignWeb = () => {
             Diseño Web
           </h1>
           <section className="mb-20 ">
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Desarrollamos sitios web atractivos y funcionales para tu negocio.
-            Nos especializamos en diseñar experiencias digitales únicas que
-            reflejan la esencia de tu marca y contribuyen al crecimiento de tu
-            negocio.
-          </p>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Desarrollamos sitios web atractivos y funcionales para tu negocio.
+              Nos especializamos en diseñar experiencias digitales únicas que
+              reflejan la esencia de tu marca y contribuyen al crecimiento de tu
+              negocio.
+            </p>
             <Image
               src="/features/icono-computadora-mouse.webp"
               alt="Ícono de Computadora y Mouse"
@@ -43,8 +43,14 @@ const DesignWeb = () => {
           </section>
         </div>
 
-        {/* Característica Destacada */}
+        {/* Característica Destacada Ventajas de Nuestro Enfoque */}
         <section className="max-w-3xl mx-auto mb-12 py-12">
+          <BorderBeamCard
+            title="Diseño Personalizado"
+            content=" Cada proyecto es único, y por eso, tu sitio web debe serlo también. Creamos diseños personalizados que capturan la identidad de tu marca y se adaptan a tus objetivos comerciales."
+          />
+        </section>
+        {/* <section className="max-w-3xl mx-auto mb-12 py-12">
           <Card className="p-6 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg">
             <CardHeader>
               <CardTitle
@@ -61,7 +67,7 @@ const DesignWeb = () => {
               </p>
             </CardContent>
           </Card>
-        </section>
+        </section> */}
 
         {/* Ventajas de Nuestro Enfoque */}
         <div className="text-center mb-12 py-12">
@@ -107,7 +113,9 @@ const DesignWeb = () => {
                   Optimización para Conversión:
                 </span>
                 <p>
-                Optimizamos el diseño de tu sitio web para convertir visitantes en clientes, ajustándolo estratégicamente a los objetivos de tu negocio.
+                  Optimizamos el diseño de tu sitio web para convertir
+                  visitantes en clientes, ajustándolo estratégicamente a los
+                  objetivos de tu negocio.
                 </p>
               </section>
             </li>
