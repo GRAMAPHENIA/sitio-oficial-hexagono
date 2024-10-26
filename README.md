@@ -19,4 +19,6 @@ El **Sitio de Hexágono** es una agencia de diseño y desarrollo web especializa
 - **Experiencia de Usuario**: Nos enfocamos en la usabilidad y la accesibilidad para ofrecer una excelente experiencia a los visitantes.
 - **Rendimiento**: Optimizamos el rendimiento de carga para que los sitios sean rápidos y eficientes.
 
-#
+# Tecnologias
+
+toast

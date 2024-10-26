@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { vollkorn } from "@/styles/fonts";
+import Image from "next/image";
 
 interface BorderBeamCardProps {
   title: string;
@@ -11,14 +12,21 @@ export default function BorderBeamCard({
   content,
 }: BorderBeamCardProps) {
   return (
-    <div className="relative max-w-3xl h-[400px] mx-auto mb-12 p-12 flex justify-center">
+    <div className="relative max-w-3xl h-[500px] lg:h-[400px] mx-auto mb-12 p-12 flex justify-center">
       {/* Animated border */}
       <div className="absolute inset-0 rounded-lg overflow-hidden">
-        <div className="absolute inset-[-100%] animate-[spin_8s_linear_infinite] bg-[length:53%_53%,53%_53%,0%_0%,0%_0%] bg-[position:0_0,100%_0,100%_100%,0_100%] bg-no-repeat bg-[linear-gradient(45deg,transparent_40%,#d1d5db_45%,#9ca3af_50%,#ffffff_55%,transparent_60%),linear-gradient(45deg,transparent_40%,#d1d5db_45%,#9ca3af_50%,#ffffff_55%,transparent_60%),linear-gradient(45deg,transparent_40%,#d1d5db_45%,#9ca3af_50%,#ffffff_55%,transparent_60%),linear-gradient(45deg,transparent_40%,#d1d5db_45%,#9ca3af_50%,#ffffff_55%,transparent_60%)] dark:bg-[linear-gradient(45deg,transparent_40%,#6b7280_45%,#6b7280_55%,transparent_60%),linear-gradient(45deg,transparent_40%,#6b7280_45%,#6b7280_55%,transparent_60%),linear-gradient(45deg,transparent_40%,#6b7280_45%,#6b7280_55%,transparent_60%),linear-gradient(45deg,transparent_40%,#6b7280_45%,#6b7280_55%,transparent_60%)] will-change-transform"></div>
+        <div className="absolute inset-[-100%] animate-[spin_8s_linear_infinite] bg-[length:53%_53%,53%_53%,0%_0%,0%_0%] bg-[position:0_0,100%_0,100%_100%,0_100%] bg-no-repeat bg-[linear-gradient(45deg,transparent_40%,#d1d5db_45%,#9ca3af_50%,#ffffff_55%,transparent_60%),linear-gradient(45deg,transparent_40%,#d1d5db_45%,#9ca3af_50%,#ffffff_55%,transparent_60%),linear-gradient(45deg,transparent_40%,#d1d5db_45%,#9ca3af_50%,#ffffff_55%,transparent_60%),linear-gradient(45deg,transparent_40%,#d1d5db_45%,#9ca3af_50%,#ffffff_55%,transparent_60%)] dark:bg-[linear-gradient(45deg,transparent_40%,#6EBBFF_45%,#6b7280_55%,transparent_60%),linear-gradient(45deg,transparent_40%,#6b7280_45%,#6b7280_55%,transparent_60%),linear-gradient(45deg,transparent_40%,#6b7280_45%,#6b7280_55%,transparent_60%),linear-gradient(45deg,transparent_40%,#6b7280_45%,#6b7280_55%,transparent_60%)] will-change-transform"></div>
       </div>
 
       {/* Card content */}
-      <Card className="absolute inset-[1.1px] shadow-md overflow-hidden bg-white dark:bg-card p-6 border border-slate-200 dark:border-slate-700 rounded-lg">
+      <Card className="absolute inset-[1.1px] shadow-md overflow-hidden bg-white dark:bg-card pt-0 px-6 text-balance border border-slate-200 dark:border-slate-700 rounded-lg">
+        <Image
+          src="/web/header-des-web.webp"
+          alt="Ícono minimalista de un plano con una regla y un lápiz, representado con líneas simples y pocos detalles."
+          width={100}
+          height={100}
+          className="mx-auto mt-6"
+        />
         <CardHeader className="bg-white dark:bg-card">
           <CardTitle
             className={`${vollkorn.className} text-4xl lg:text-6xl font-extrabold text-slate-800 dark:text-slate-200 mb-6`}

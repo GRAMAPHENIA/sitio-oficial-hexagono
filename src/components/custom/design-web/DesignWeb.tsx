@@ -19,33 +19,37 @@ const DesignWeb = () => {
     <section className="flex flex-col items-center mx-auto text-center pb-12">
       <div className="mx-auto px-6">
         {/* Hero Section */}
-        <div className="mb-12">
+        <div className="">
+          <Image
+            src="/web/portada-web.webp"
+            alt="Ícono de Computadora y Mouse"
+            width={400}
+            height={400}
+            className="mx-auto"
+          />
           <h1
-            className={`${vollkorn.className} text-4xl lg:text-9xl font-extrabold text-slate-800 dark:text-slate-200 mb-6 my-20`}
+            className={`${vollkorn.className} text-4xl lg:text-9xl font-extrabold text-slate-800 dark:text-slate-200 mb-6`}
           >
             Diseño Web
           </h1>
           <section className="mb-20 ">
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Desarrollamos sitios web atractivos y funcionales para tu negocio.
-              Nos especializamos en diseñar experiencias digitales únicas que
-              reflejan la esencia de tu marca y contribuyen al crecimiento de tu
-              negocio.
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto text-balance">
+              Desarrollamos sitios web atractivos y funcionales{" "}
+              <span className="font-bold">para tu negocio</span> . Nos
+              especializamos en diseñar{" "}
+              <span className="font-bold">
+                experiencias digitales únicas que reflejan la esencia de tu
+                marca
+              </span>{" "}
+              y contribuyen al crecimiento de tu negocio.
             </p>
-            <Image
-              src="/features/icono-computadora-mouse.webp"
-              alt="Ícono de Computadora y Mouse"
-              width={400}
-              height={400}
-              className="mx-auto"
-            />
           </section>
         </div>
 
         {/* Característica Destacada Ventajas de Nuestro Enfoque */}
         <section className="relative max-w-3xl mx-auto mb-12 py-12">
           {/* Luz de fondo detrás del componente BorderBeamCard */}
-          <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500 via-slate-500 to-teal-600 opacity-0 dark:opacity-10 h-[400px] blur-[50px]"></div>
+          <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500 via-slate-500 to-teal-600 opacity-20 dark:opacity-10 h-[500px] blur-[50px]"></div>
           <BorderBeamCard
             title="Diseño Personalizado"
             content="Cada proyecto es único, y por eso, tu sitio web debe serlo también. Creamos diseños personalizados que capturan la identidad de tu marca y se adaptan a tus objetivos comerciales."
@@ -64,8 +68,8 @@ const DesignWeb = () => {
               <Image
                 src={"/web/dis-web.webp"}
                 alt="Imagen de un icono de diseño."
-                width={100}
-                height={100}
+                width={200}
+                height={200}
               />
               <section className="pt-10 pb-20">
                 <span
@@ -85,8 +89,8 @@ const DesignWeb = () => {
               <Image
                 src={"/web/embudo.webp"}
                 alt="Imagen de un icono de conversion."
-                width={100}
-                height={100}
+                width={200}
+                height={200}
               />
               <section className="pt-10 pb-20">
                 <span
@@ -104,10 +108,10 @@ const DesignWeb = () => {
 
             <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center pt-20 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0 lg:px-10 bg-white dark:bg-card">
               <Image
-                src={"/web/experiencia-de-usuario.webp"}
+                src={"/web/ux.webp"}
                 alt="Imagen de un icono de experiencia de usuario."
-                width={100}
-                height={100}
+                width={200}
+                height={200}
               />
               <section className="pt-10 pb-20">
                 <span
