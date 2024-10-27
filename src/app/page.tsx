@@ -2,7 +2,6 @@ import Header from "@/components/custom/header";
 import Features from "@/components/custom/features/Features";
 import Topbar from "@/components/custom/TopBar";
 import Testimonial from "@/components/custom/testimonials/TestimonialsSection";
-import PricingTable from "@/components/custom/pricing/PricingTable";
 import Portfolio from "@/components/custom/portfolio/Portfolio";
 import FAQ from "@/components/custom/faq/FAQ";
 import CTA from "@/components/custom/cta/cta";
@@ -17,7 +16,6 @@ export default function Home() {
       <div className="min-h-screen max-w-7xl flex flex-col items-center m-auto">
         <Features />
         <Testimonial />
-        <PricingTable />
         <Portfolio />
         <FAQ />
         <ContactForm />

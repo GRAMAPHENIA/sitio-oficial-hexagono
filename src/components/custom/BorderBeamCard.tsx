@@ -21,7 +21,7 @@ export default function BorderBeamCard({
       {/* Card content */}
       <Card className="absolute inset-[1.1px] shadow-md overflow-hidden bg-white dark:bg-card pt-0 px-6 text-balance border border-slate-200 dark:border-slate-700 rounded-lg">
         <Image
-          src="/web/header-des-web.webp"
+          src="/web/dis-pers.webp"
           alt="Ícono minimalista de un plano con una regla y un lápiz, representado con líneas simples y pocos detalles."
           width={100}
           height={100}

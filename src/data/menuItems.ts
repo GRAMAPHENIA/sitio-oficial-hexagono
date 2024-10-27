@@ -9,6 +9,11 @@ export const menuItems: MenuItemProps[] = [
         title: "Home",
         description: "Regresa a la página principal de Hexágono.",
       },
+      {
+        href: "/#contact-form",
+        title: "Contacto",
+        description: "Ponte en contacto con nosotros para más información.",
+      },
     ],
   },
   {
@@ -59,12 +64,13 @@ export const menuItems: MenuItemProps[] = [
     ],
   },
   {
-    label: "Contacto",
+    label: "Precios",
     links: [
       {
-        href: "/#contact-form",
-        title: "Contacto",
-        description: "Ponte en contacto con nosotros para más información.",
+        href: "/precios",
+        title: "Precios",
+        description:
+          "Descubre nuestros planes de desarrollo web y redes sociales",
       },
     ],
   },

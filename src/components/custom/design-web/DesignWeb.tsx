@@ -17,16 +17,16 @@ const DesignWeb = () => {
 
   return (
     <section className="flex flex-col items-center mx-auto text-center pb-12">
-      <div className="mx-auto px-6">
+      <div className="mx-auto px-6 mt-12">
         {/* Hero Section */}
         <div className="">
-          <Image
+          {/* <Image
             src="/web/portada-web.webp"
             alt="Ícono de Computadora y Mouse"
             width={400}
             height={400}
             className="mx-auto"
-          />
+          /> */}
           <h1
             className={`${vollkorn.className} text-4xl lg:text-9xl font-extrabold text-slate-800 dark:text-slate-200 mb-6`}
           >
