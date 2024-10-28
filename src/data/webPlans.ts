@@ -27,7 +27,7 @@ export const webPlans: PricingPlan[] = [
     name: "Web Corporativa",
     title: "Para logra presencia en línea.",
     description:
-      "Características avanzadas para negocios que buscan expandir su presencia en línea.",
+      "Características avanzadas para negocios.",
     features: [
       "Adaptado a la identidad de tu marca.",
       "Home, Servicios, Nosotros, Contacto y más.",
