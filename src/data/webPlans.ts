@@ -5,7 +5,7 @@ export const webPlans: PricingPlan[] = [
     id: "landing-page",
     name: "Landing Page",
     title: "Para emprendedores",
-    description: "Todo lo que necesitas para comenzar.",
+    description: "Para comenzar.",
     features: [
       "Enfocado en la conversión.",
       "Todo en una sola página.",
@@ -25,7 +25,7 @@ export const webPlans: PricingPlan[] = [
   {
     id: "web-corporativa",
     name: "Web Corporativa",
-    title: "Ideal para negocios que buscan presencia profesional en línea.",
+    title: "Para quienes buscan presencia en línea.",
     description:
       "Características avanzadas para negocios que buscan expandir su presencia en línea.",
     features: [
