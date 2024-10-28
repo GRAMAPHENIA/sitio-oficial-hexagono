@@ -1,12 +1,10 @@
-import { Key } from "react";
-
 export interface PricingPlan {
-  id: Key;
-  name: string;
-  title: string;
-  description: string;
-  features: string[];
-  price: number;
-  currency: string;
-  available: boolean;
-}
+    id: string; // Cambia Key a string
+    name: string;
+    title: string;
+    description: string;
+    features: string[];
+    price: number; // Asegúrate de que esto sea un número
+    currency: string;
+    available: boolean;
+  }

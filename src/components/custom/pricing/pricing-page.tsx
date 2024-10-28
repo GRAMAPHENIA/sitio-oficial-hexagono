@@ -1,115 +1,9 @@
-import { PricingTable } from "./pricing-table";
+// src/app/PricingPage.tsx
+import { PricingTable } from "./pricing-table"; // Asegúrate de que esta ruta sea correcta
 import { Vollkorn } from "next/font/google";
+import { webPlans } from "@/data/webPlans";
+import { socialPlans } from "@/data/socialPlans";
 
-const webPlans = [
-  {
-    id: "landing-page",
-    name: "Landing Page",
-    title: "Para pequeñas empresas",
-    description: "odo lo que necesitas para comenzar con un sitio web simple.",
-    features: [
-      "Sitio web de 1 página",
-      "Dominio personalizado",
-      "SEO básico",
-      "Diseño responsive",
-      "Creado con Next.js, Tailwind, TypeScript",
-      "Hasta 10",
-      "Optimización para todo tipo de dispositivo",
-      "1 formulario de contacto",
-      "Enlaces a redes sociales",
-      "Cuenta de correo",
-      "Hosting por 1 año",
-      "Dominio por 1 año",
-      "Certificado SSL",
-    ],
-    price: 9.99,
-    currency: "$",
-    available: true,
-  },
-  {
-    id: "web-pro",
-    name: "Pro",
-    title: "For growing businesses",
-    description:
-      "Advanced features for businesses looking to expand their online presence",
-    features: [
-      "Sitio creado en WordPress",
-      "Hasta 6 secciones precargadas",
-      "Hasta 10 fotos precargadas",
-      "Optimización para todo tipo de dispositivo",
-      "1 formulario de contacto",
-      "Enlaces a redes sociales",
-      "Botón de WhatsApp",
-      "Hasta 5 cuentas de correo",
-      "Hosting por 1 año",
-      "Dominio .com.ar por 1 año",
-      "Certificado SSL por 1 año",
-      "Mantenimiento web por 3 meses",
-    ],
-    price: 24.99,
-    currency: "$",
-    available: true,
-  },
-  {
-    id: "web-enterprise",
-    name: "Enterprise",
-    title: "For large organizations",
-    description: "Customized solutions for complex web applications",
-    features: [
-      "Sitio creado en WordPress y WooCommerce",
-      "Hasta 6 secciones precargadas",
-      "Hasta 10 fotos precargadas",
-      "Hasta 5 categorías precargadas",
-      "Hasta 5 productos precargados",
-      "Optimización para todo tipo de dispositivo",
-      "1 formulario de contacto",
-      "Enlaces a redes sociales",
-      "Botón de WhatsApp",
-      "Hasta 5 cuentas de correo",
-      "Hosting por 1 año",
-      "Dominio .com.ar por 1 año",
-      "Certificado SSL por 1 año",
-      "Mantenimiento web por 3 meses",
-    ],
-    price: 99.99,
-    currency: "$",
-    available: false,
-  },
-];
-
-const socialPlans = [
-  {
-    id: "social-starter",
-    name: "Starter",
-    title: "For personal brands",
-    description: "Basic social media management for individuals",
-    features: [
-      "2 social platforms",
-      "Weekly content calendar",
-      "Basic analytics",
-    ],
-    price: 14.99,
-    currency: "$",
-    available: true,
-  },
-  {
-    id: "social-growth",
-    name: "Growth",
-    title: "For small businesses",
-    description: "Comprehensive social media management for growing businesses",
-    features: [
-      "4 social platforms",
-      "Daily content calendar",
-      "Advanced analytics",
-      "Community management",
-    ],
-    price: 39.99,
-    currency: "$",
-    available: true,
-  },
-];
-
-// Configuración de la fuente Vollkorn
 const vollkorn = Vollkorn({
   subsets: ["latin"],
   weight: ["400", "700"],
@@ -127,7 +21,7 @@ export default function PricingPage() {
               Nuestros Planes
             </h2>
             <p className="text-xl text-gray-500 dark:text-gray-300 mb-16 ">
-              Elige el plan perfecto para tus necesidades
+            Elegí el plan perfecto para tus necesidades
             </p>
           </div>
         </header>

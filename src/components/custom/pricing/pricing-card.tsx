@@ -37,7 +37,7 @@ export function PricingCard({ plan }: PricingCardProps) {
   } = plan || {};
 
   return (
-    <div className="relative mx-auto p-[3px] w-full max-w-xs">
+    <div className="relative mx-auto p-[3px] w-full max-w-sm">
       {/* Animated border */}
 
       <div className="absolute inset-0.5 rounded-lg overflow-hidden pointer-events-none">
