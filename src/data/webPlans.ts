@@ -25,7 +25,7 @@ export const webPlans: PricingPlan[] = [
   {
     id: "web-corporativa",
     name: "Web Corporativa",
-    title: "Para quienes buscan presencia en línea.",
+    title: "Para logra presencia en línea.",
     description:
       "Características avanzadas para negocios que buscan expandir su presencia en línea.",
     features: [
