@@ -48,7 +48,7 @@ export function PricingCard({ plan }: PricingCardProps) {
         {/* Border más fino */}
       </div>
       {/* Card content */}
-      <Card className="relative shadow-md overflow-hidden bg-white dark:bg-card border border-slate-200 dark:border-slate-700 rounded-lg h-[100%]">
+      <Card className="relative shadow-md overflow-hidden bg-white dark:bg-card border border-slate-200 dark:border-slate-700 rounded-lg h-[100%] flex flex-col justify-between">
         <CardHeader>
           <CardTitle>{name}</CardTitle>
           <CardDescription>{title}</CardDescription>
@@ -59,7 +59,7 @@ export function PricingCard({ plan }: PricingCardProps) {
               {currency}
               {price}
             </span>
-            <span className="text-muted-foreground">/mes</span>
+            {/* <span className="text-muted-foreground">/mes</span> */}
           </div>
           <p className="mb-4 text-muted-foreground">{description}</p>
           <ul className="space-y-2">
@@ -76,7 +76,7 @@ export function PricingCard({ plan }: PricingCardProps) {
             className="w-full"
             variant={available ? "default" : "secondary"}
           >
-            {available ? "Get Started" : "Join Waitlist"}
+            {available ? "Comenzar" : "inscribirse en la lista de espera"}
           </Button>
         </CardFooter>
       </Card>
