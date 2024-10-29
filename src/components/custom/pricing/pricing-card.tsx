@@ -56,7 +56,7 @@ export function PricingCard({ plan }: PricingCardProps) {
           <div className="mb-4">
             <span className="text-3xl font-bold">
               {/* Para generar precios con punto de mil */}
-              {currency === "$" ? "$" : currency}{" "}
+              {currency}{" "}
               {price.toLocaleString("es-AR")}
             </span>
             {/* <span className="text-muted-foreground">/mes</span> */}
