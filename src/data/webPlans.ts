@@ -10,18 +10,15 @@ export const webPlans: PricingPlan[] = [
       "Enfocado en la conversión.",
       "Todo en una sola página.",
       "Visibilidad en buscadores.",
-      "Diseño responsivo.",
+      "Adaptable a cualquier dispositivo.",
       "Formulario de Contacto",
       "Enlaces a redes sociales",
       "Cuenta de correo",
-      "Hosting por 1 año",
-      "Dominio por 1 año",
       "Certificado SSL",
     ],
     price: 75000,
     currency: "$",
     available: true,
-    // monthlyPrice: 74090 / 12, // Precio mensual aproximado
   },
   {
     id: "web-corporativa",
@@ -30,20 +27,17 @@ export const webPlans: PricingPlan[] = [
     description: "Características avanzadas.",
     features: [
       "Identidad de marca.",
-      "Servicios, Contacto y más.",
+      "Hasta 5 secciones.",
       "Visibilidad en buscadores.",
-      "Diseño responsivo.",
+      "Adaptable a cualquier dispositivo.",
       "Formulario de contacto",
       "Enlaces a redes sociales",
-      "Asesoramiento en el lanzamiento.",
-      "Hosting por 1 año",
-      "Dominio por 1 año",
-      "Certificado SSL por 1 año",
+      "Cuenta de correo",
+      "Certificado SSL",
     ],
     price: 130000, // Precio promedio entre 15 y 20 horas de trabajo
     currency: "$",
     available: true,
-    // monthlyPrice: 129657.5 / 12, // Precio mensual aproximado
   },
   {
     id: "web-tienda-nube",
@@ -64,7 +58,6 @@ export const webPlans: PricingPlan[] = [
     ],
     price: 315000,
     currency: "$",
-    available: true,
-    // monthlyPrice: 15000, // Hosting de Tienda Nube mensual
+    available: true, 
   },
 ];
