@@ -38,14 +38,13 @@ export function PricingCard({ plan }: PricingCardProps) {
 
   return (
     <div className="relative mx-auto p-[3px] w-full max-w-sm">
-      {/* Animated border */}
+      {/* Borde Animado */}
 
       <div className="absolute inset-0.5 rounded-lg overflow-hidden pointer-events-none">
         <div
           className="absolute inset-[-98%] animate-[spin_8s_linear_infinite] bg-[length:53%_53%,53%_53%,0%_0%,0%_0%] bg-[position:0_0,100%_0,100%_100%,0_100%] bg-no-repeat bg-[linear-gradient(45deg,transparent_40%,#d1d5db_45%,#9ca3af_50%,#ffffff_55%,transparent_60%),linear-gradient(45deg,transparent_40%,#d1d5db_45%,#9ca3af_50%,#ffffff_55%,transparent_60%),linear-gradient(45deg,transparent_40%,#d1d5db_45%,#9ca3af_50%,#ffffff_55%,transparent_60%),linear-gradient(45deg,transparent_40%,#d1d5db_45%,#9ca3af_50%,#ffffff_55%,transparent_60%)] dark:bg-[linear-gradient(45deg,transparent_40%,#6EBBFF_45%,#6b7280_55%,transparent_60%),linear-gradient(45deg,transparent_40%,#6b7280_45%,#6b7280_55%,transparent_60%),linear-gradient(45deg,transparent_40%,#6b7280_45%,#6b7280_55%,transparent_60%),linear-gradient(45deg,transparent_40%,#6b7280_45%,#6b7280_55%,transparent_60%)]"
           style={{ borderWidth: "1px" }}
-        ></div>{" "}
-        {/* Border más fino */}
+        ></div>
       </div>
       {/* Card content */}
       <Card className="relative shadow-md overflow-hidden bg-white dark:bg-card border border-slate-200 dark:border-slate-700 rounded-lg h-[100%] flex flex-col justify-between">
@@ -56,8 +55,9 @@ export function PricingCard({ plan }: PricingCardProps) {
         <CardContent>
           <div className="mb-4">
             <span className="text-3xl font-bold">
-              {currency}
-              {price}
+              {/* Para generar precios con punto de mil */}
+              {currency === "$" ? "$" : currency}{" "}
+              {price.toLocaleString("es-AR")}
             </span>
             {/* <span className="text-muted-foreground">/mes</span> */}
           </div>
