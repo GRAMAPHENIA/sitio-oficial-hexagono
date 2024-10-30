@@ -1,5 +1,5 @@
 // src/app/PricingPage.tsx
-import { PricingTable } from "./pricing-table"; // Asegúrate de que esta ruta sea correcta
+import { PricingTable } from "./pricing-table";
 import { Vollkorn } from "next/font/google";
 import { webPlans } from "@/data/webPlans";
 import { socialPlans } from "@/data/socialPlans";
@@ -21,7 +21,7 @@ export default function PricingPage() {
               Nuestros Planes
             </h2>
             <p className="text-xl text-gray-500 dark:text-gray-300 mb-16 ">
-            Elegí el plan perfecto para tus necesidades
+              Elegí el plan perfecto para tus necesidades
             </p>
           </div>
         </header>
