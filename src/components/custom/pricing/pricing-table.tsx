@@ -24,13 +24,13 @@ export function PricingTable({
   socialPlans = [],
 }: PricingTableProps) {
   return (
-    <div className="container mx-auto px-4 py-8 mb-20">
+    <div className="container mx-auto py-8 mb-20">
       <h2
         className={`${vollkorn.className} text-4xl lg:text-5xl font-black text-slate-600 dark:text-slate-300 mb-10 mx-auto text-center max-w-3xl`}
       >
         Sitios Web
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-6 ">
         {webPlans.length > 0 ? (
           webPlans.map((plan) => <PricingCard key={plan.id} plan={plan} />)
         ) : (
@@ -65,7 +65,7 @@ export function PricingTable({
       >
         Gestión de Redes Sociales
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {socialPlans.length > 0 ? (
           socialPlans.map((plan) => <PricingCard key={plan.id} plan={plan} />)
         ) : (
