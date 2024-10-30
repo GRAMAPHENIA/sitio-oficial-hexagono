@@ -30,7 +30,7 @@ export function PricingTable({
       >
         Sitios Web
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-6 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6 ">
         {webPlans.length > 0 ? (
           webPlans.map((plan) => <PricingCard key={plan.id} plan={plan} />)
         ) : (
@@ -65,7 +65,7 @@ export function PricingTable({
       >
         Gestión de Redes Sociales
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {socialPlans.length > 0 ? (
           socialPlans.map((plan) => <PricingCard key={plan.id} plan={plan} />)
         ) : (
