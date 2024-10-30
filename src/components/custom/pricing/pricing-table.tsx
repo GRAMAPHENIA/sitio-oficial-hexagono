@@ -39,7 +39,7 @@ export function PricingTable({
       </div>
 
       <section>
-        <div className="text-left text-slate-600 dark:text-slate-400 bg-card dark:bg-card rounded-l-none rounded-lg p-10 max-w-2xl mx-auto my-20 border-l-4 border-slate-300 dark:border-slate-500 border">
+        <div className="text-left text-slate-600 dark:text-slate-400 bg-card dark:bg-card rounded-l-none rounded-lg p-10 max-w-2xl mx-auto my-20 border-l-4 border-l-blue-300/80 dark:border-l-blue-900/80 border">
           <QuoteIcon className="h-16 w-16 mb-2 text-slate-400/40" />
           <p className="font-normal ml-8">
             Los costos de <span className="font-bold">hosting y dominio</span>{" "}
