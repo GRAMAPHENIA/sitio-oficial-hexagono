@@ -65,7 +65,7 @@ export function PricingCard({ plan }: PricingCardProps) {
           <ul className="space-y-2">
             {features.map((feature, index) => (
               <li key={index} className="flex items-center">
-                <Check className="mr-4 h-5 w-5 text-emerald-500 border border-primary/20 rounded-full p-[3px] bg-card-foreground/5 " />
+                <Check className="mr-1 h-5 w-5 text-emerald-500 border border-primary/20 rounded-full p-[3px] bg-card-foreground/5 " />
                 <span>{feature}</span>
               </li>
             ))}
