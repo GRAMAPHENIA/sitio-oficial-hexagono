@@ -3,9 +3,10 @@
 import { Button } from "@/components/ui/button";
 import { vollkorn } from "@/styles/fonts";
 import Image from "next/image";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+// import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 import { useRouter } from "next/navigation";
+import BorderBeamCard from "../BorderBeamCard";
 
 const CustomDevelopment = () => {
   const router = useRouter();
@@ -15,21 +16,24 @@ const CustomDevelopment = () => {
   };
 
   return (
-    <section className="flex flex-col items-center mx-auto text-center pb-12">
+    <section className="flex flex-col items-center mx-auto text-center p-12 ">
       <div className="mx-auto px-6">
         {/* Hero Section */}
         <div className="mb-12">
           <h1
-            className={`${vollkorn.className} text-4xl lg:text-9xl font-extrabold text-slate-800 dark:text-slate-200 mb-6 my-20`}
+            className={`${vollkorn.className} text-4xl lg:text-9xl font-extrabold text-slate-800 dark:text-slate-200 mb-6 mt-10`}
           >
             Desarrollo
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
-            Soluciones personalizadas para tu negocio. Creamos aplicaciones y
-            funcionalidades a medida, ajustadas a los objetivos de
-            <span className="font-bold "> tu empresa</span>.
-          </p>
-          <section className="mb-8">
+          <section className="mb-20">
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto text-balance">
+              Soluciones personalizadas para tu negocio. Creamos aplicaciones y
+              funcionalidades a medida, ajustadas a los objetivos de
+              <span className="font-bold "> tu empresa</span>.
+            </p>
+          </section>
+
+          {/* <section className="mb-8">
             <Image
               src="/features/icono-plano-regla-lapiz.svg"
               alt="Ícono de Código"
@@ -37,11 +41,23 @@ const CustomDevelopment = () => {
               height={300}
               className="rounded-full border border-slate-300 dark:border-slate-500 mx-auto shadow-inner"
             />
+          </section> */}
+
+          {/* Característica Destacada */}
+          <section className="relative max-w-3xl mx-auto mb-12 py-12">
+            {/* Luz de fondo detrás del componente BorderBeamCard */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500 via-slate-500 to-teal-600 opacity-20 dark:opacity-10 h-[500px] blur-[50px]"></div>
+            <BorderBeamCard
+              title=" Personalizado"
+              content="Adaptamos cada proyecto a las necesidades específicas de tu
+                negocio. Desde funcionalidades únicas hasta integraciones
+                complejas, creamos soluciones que se ajustan a tus requisitos
+                exactos y aportan valor real."
+            />
           </section>
         </div>
 
-        {/* Característica Destacada */}
-        <section className="max-w-3xl mx-auto mb-12 py-12">
+        {/* <section className="max-w-3xl mx-auto mb-12 py-12">
           <Card className="p-6 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg">
             <CardHeader>
               <CardTitle
@@ -59,7 +75,7 @@ const CustomDevelopment = () => {
               </p>
             </CardContent>
           </Card>
-        </section>
+        </section> */}
 
         {/* Ventajas de Nuestro Enfoque */}
         <div className="text-center mb-12 py-12">
@@ -122,7 +138,8 @@ const CustomDevelopment = () => {
                   Integraciones Efectivas:
                 </span>
                 <p>
-                Implementamos soluciones que se integran con tus herramientas y sistemas actuales para maximizar la eficiencia.
+                  Implementamos soluciones que se integran con tus herramientas
+                  y sistemas actuales para maximizar la eficiencia.
                 </p>
               </section>
             </li>

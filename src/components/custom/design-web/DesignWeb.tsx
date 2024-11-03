@@ -4,9 +4,29 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 import { vollkorn } from "@/styles/fonts";
-
 import { Button } from "@/components/ui/button";
 import BorderBeamCard from "../BorderBeamCard";
+
+const advantages = [
+  {
+    title: "Diseño",
+    content: "Nos aseguramos de que cada elemento del sitio no solo sea visualmente atractivo, sino también funcional y alineado con las metas de tu negocio.",
+    imageSrc: "/web/dis-web.webp",
+    imageAlt: "Imagen de un icono de diseño."
+  },
+  {
+    title: "Conversión",
+    content: "Optimizamos el diseño de tu sitio web para convertir visitantes en clientes, ajustándolo estratégicamente a los objetivos de tu negocio.",
+    imageSrc: "/web/embudo.webp",
+    imageAlt: "Imagen de un icono de conversión."
+  },
+  {
+    title: "UX",
+    content: "Enfocamos nuestros esfuerzos en crear una experiencia de usuario fluida y agradable, facilitando la navegación y el acceso a la información.",
+    imageSrc: "/web/ux.webp",
+    imageAlt: "Imagen de un icono de experiencia de usuario."
+  },
+];
 
 const DesignWeb = () => {
   const router = useRouter();
@@ -19,28 +39,15 @@ const DesignWeb = () => {
     <section className="flex flex-col items-center mx-auto text-center pb-12">
       <div className="mx-auto px-6 mt-12">
         {/* Hero Section */}
-        <div className="">
-          {/* <Image
-            src="/web/portada-web.webp"
-            alt="Ícono de Computadora y Mouse"
-            width={400}
-            height={400}
-            className="mx-auto"
-          /> */}
-          <h1
-            className={`${vollkorn.className} text-4xl lg:text-9xl font-extrabold text-slate-800 dark:text-slate-200 mb-6`}
-          >
+        <div>
+          <h1 className={`${vollkorn.className} text-4xl lg:text-9xl font-extrabold text-slate-800 dark:text-slate-200 mb-6 mt-10`}>
             Diseño Web
           </h1>
-          <section className="mb-20 ">
+          <section className="mb-20">
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto text-balance">
               Desarrollamos sitios web atractivos y funcionales{" "}
-              <span className="font-bold">para tu negocio</span> . Nos
-              especializamos en diseñar{" "}
-              <span className="font-bold">
-                experiencias digitales únicas que reflejan la esencia de tu
-                marca
-              </span>{" "}
+              <span className="font-bold">para tu negocio</span>. Nos especializamos en diseñar{" "}
+              <span className="font-bold">experiencias digitales únicas que reflejan la esencia de tu marca</span>{" "}
               y contribuyen al crecimiento de tu negocio.
             </p>
           </section>
@@ -48,7 +55,6 @@ const DesignWeb = () => {
 
         {/* Característica Destacada Ventajas de Nuestro Enfoque */}
         <section className="relative max-w-3xl mx-auto mb-12 py-12">
-          {/* Luz de fondo detrás del componente BorderBeamCard */}
           <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500 via-slate-500 to-teal-600 opacity-20 dark:opacity-10 h-[500px] blur-[50px]"></div>
           <BorderBeamCard
             title="Diseño Personalizado"
@@ -58,74 +64,26 @@ const DesignWeb = () => {
 
         {/* Ventajas de Nuestro Enfoque */}
         <div className="text-center mb-12 py-12">
-          <h2
-            className={`${vollkorn.className} text-4xl lg:text-6xl font-extrabold text-slate-800 dark:text-slate-200 mb-12 max-w-5xl`}
-          >
+          <h2 className={`${vollkorn.className} text-4xl lg:text-6xl font-extrabold text-slate-800 dark:text-slate-200 mb-12 max-w-5xl`}>
             Ventajas de nuestro enfoque para diseñar sitios web
           </h2>
-          <ul className="flex flex-col list-none space-y-4 max-w-2xl items-center justify-center mx-auto py-12 gap-y-10">
-            <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center pt-20 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0 lg:px-10 bg-white dark:bg-card">
-              <Image
-                src={"/web/dis-web.webp"}
-                alt="Imagen de un icono de diseño."
-                width={200}
-                height={200}
-              />
-              <section className="pt-10 pb-20">
-                <span
-                  className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}
-                >
-                  Diseño Atractivo y Funcional:
-                </span>
-                <p>
-                  Nos aseguramos de que cada elemento del sitio no solo sea
-                  visualmente atractivo, sino también funcional y alineado con
-                  las metas de tu negocio.
-                </p>
-              </section>
-            </li>
-
-            <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center pt-20 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0 lg:px-10 bg-white dark:bg-card">
-              <Image
-                src={"/web/embudo.webp"}
-                alt="Imagen de un icono de conversion."
-                width={200}
-                height={200}
-              />
-              <section className="pt-10 pb-20">
-                <span
-                  className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}
-                >
-                  Optimización para Conversión:
-                </span>
-                <p>
-                  Optimizamos el diseño de tu sitio web para convertir
-                  visitantes en clientes, ajustándolo estratégicamente a los
-                  objetivos de tu negocio.
-                </p>
-              </section>
-            </li>
-
-            <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center pt-20 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0 lg:px-10 bg-white dark:bg-card">
-              <Image
-                src={"/web/ux.webp"}
-                alt="Imagen de un icono de experiencia de usuario."
-                width={200}
-                height={200}
-              />
-              <section className="pt-10 pb-20">
-                <span
-                  className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}
-                >
-                  Experiencia de Usuario:
-                </span>
-                <p>
-                  Enfocamos nuestros esfuerzos en crear una experiencia de
-                  usuario fluida y agradable, facilitando la navegación y el
-                  acceso a la información.
-                </p>
-              </section>
-            </li>
+          <ul className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto py-12">
+            {advantages.map((advantage, index) => (
+              <li key={index} className="text-stone-700 dark:text-stone-300 flex flex-col items-center pt-10 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-card justify-between">
+                <Image
+                  src={advantage.imageSrc}
+                  alt={advantage.imageAlt}
+                  width={60}
+                  height={60}
+                />
+                <section className="pt-10 pb-10 px-6 text-center">
+                  <span className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}>
+                    {advantage.title}
+                  </span>
+                  <p className="mt-5">{advantage.content}</p>
+                </section>
+              </li>
+            ))}
           </ul>
         </div>
 
