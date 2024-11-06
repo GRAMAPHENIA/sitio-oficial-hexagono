@@ -16,7 +16,7 @@ export default function Topbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="p-4 w-full flex justify-between items-center bg-white dark:bg-card">
+    <div className="p-4 w-full flex justify-between items-center bg-white dark:bg-card border-b">
       <div className="flex items-center">
         <Image
           width={300}
@@ -28,7 +28,7 @@ export default function Topbar() {
       </div>
 
       {/* Menú para dispositivos grandes */}
-      <div className="hidden lg:flex flex-1 justify-center list-none text-gray-500 dark:text-gray-300 ">
+      <div className="hidden lg:flex flex-1 justify-center list-none text-gray-500 dark:text-gray-300">
         <NavigationMenu>
           {menuItems.map((item, index) => (
             <ListItem key={index} item={item} />
