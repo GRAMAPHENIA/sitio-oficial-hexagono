@@ -1,12 +1,33 @@
+// TODO: Refact this
+
 "use client";
+
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 import { Button } from "@/components/ui/button";
 import { vollkorn } from "@/styles/fonts";
-import Image from "next/image";
-// import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-import { useRouter } from "next/navigation";
-import BorderBeamCard from "../BorderBeamCard";
+const advantages = [
+  {
+    title: "Soluciones",
+    content:
+      "Cada funcionalidad es creada para satisfacer tus necesidades específicas, asegurando que cada detalle esté alineado con tus objetivos.",
+    imageSrc: "/icons/custom-dev/soluciones.png",
+  },
+  {
+    title: "Escalabilidad",
+    content:
+      "Nuestros desarrollos permiten la expansión y adaptación conforme a la evolución de tu negocio.",
+    imageSrc: "/icons/custom-dev/escalabilidad.png",
+  },
+  {
+    title: "Integraciones",
+    content:
+      "Implementamos soluciones que se integran con tus herramientas y sistemas actuales para maximizar la eficiencia.",
+    imageSrc: "/icons/custom-dev/integraciones.png",
+  },
+];
 
 const CustomDevelopment = () => {
   const router = useRouter();
@@ -16,137 +37,54 @@ const CustomDevelopment = () => {
   };
 
   return (
-    <section className="flex flex-col items-center mx-auto text-center p-12 ">
-      <div className="mx-auto px-6">
+    <section className="flex flex-col items-center mx-auto text-center pb-12">
+      <div className="mx-auto px-6 mt-12">
         {/* Hero Section */}
-        <div className="mb-12">
+        <div>
           <h1
-            className={`${vollkorn.className} text-4xl lg:text-9xl font-extrabold text-slate-800 dark:text-slate-200 mb-6 mt-10`}
+            className={`${vollkorn.className} text-4xl lg:text-6xl font-extrabold text-slate-800 dark:text-slate-200 mt-5`}
           >
             Desarrollo
           </h1>
-          <section className="mb-20">
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto text-balance">
-              Soluciones personalizadas para tu negocio. Creamos aplicaciones y
-              funcionalidades a medida, ajustadas a los objetivos de
-              <span className="font-bold "> tu empresa</span>.
+          <section>
+            <p className="text-md text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-balance">
+              <span className="font-bold">Soluciones personalizadas</span> para
+              tu negocio. Nos dedicamos a crear aplicaciones y{" "}
+              <span className="font-bold">funcionalidades a medida</span>,
+              diseñadas para cubrir las necesidades{" "}
+              <span className="font-bold">específicas de tu empresa</span> y
+              ayudarte a alcanzar tus metas.
             </p>
-          </section>
-
-          {/* <section className="mb-8">
-            <Image
-              src="/features/icono-plano-regla-lapiz.svg"
-              alt="Ícono de Código"
-              width={300}
-              height={300}
-              className="rounded-full border border-slate-300 dark:border-slate-500 mx-auto shadow-inner"
-            />
-          </section> */}
-
-          {/* Característica Destacada */}
-          <section className="relative max-w-3xl mx-auto mb-12 py-12">
-            {/* Luz de fondo detrás del componente BorderBeamCard */}
-            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500 via-slate-500 to-teal-600 opacity-20 dark:opacity-10 h-[500px] blur-[50px]"></div>
-            <BorderBeamCard
-              title=" Personalizado"
-              content="Adaptamos cada proyecto a las necesidades específicas de tu
-                negocio. Desde funcionalidades únicas hasta integraciones
-                complejas, creamos soluciones que se ajustan a tus requisitos
-                exactos y aportan valor real."
-            />
           </section>
         </div>
 
-        {/* <section className="max-w-3xl mx-auto mb-12 py-12">
-          <Card className="p-6 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg">
-            <CardHeader>
-              <CardTitle
-                className={`${vollkorn.className} text-4xl lg:text-6xl font-extrabold text-slate-800 dark:text-slate-200 mb-6`}
+        <div className="text-center">
+          <ul className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-5xl mx-auto py-12">
+            {advantages.map((advantage, index) => (
+              <li
+                key={index}
+                className="text-stone-700 dark:text-stone-300 flex flex-col items-center text-sm pt-10 justify-between"
               >
-                Desarrollo Personalizado
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
-              <p>
-                Adaptamos cada proyecto a las necesidades específicas de tu
-                negocio. Desde funcionalidades únicas hasta integraciones
-                complejas, creamos soluciones que se ajustan a tus requisitos
-                exactos y aportan valor real.
-              </p>
-            </CardContent>
-          </Card>
-        </section> */}
-
-        {/* Ventajas de Nuestro Enfoque */}
-        <div className="text-center mb-12 py-12">
-          <h2
-            className={`${vollkorn.className} text-4xl lg:text-6xl font-extrabold text-slate-800 dark:text-slate-200 mb-12 max-w-5xl`}
-          >
-            Ventajas de nuestro enfoque para el desarrollo a medida
-          </h2>
-          <ul className="flex flex-col list-none space-y-4 max-w-2xl items-center justify-center mx-auto py-12 gap-y-10">
-            <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center pt-20 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0 lg:px-10 bg-white dark:bg-card">
-              <Image
-                src={"/web/diseno.webp"}
-                alt="Imagen de un icono de diseño."
-                width={100}
-                height={100}
-              />
-              <section className="pt-10 pb-20">
-                <span
-                  className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}
-                >
-                  Soluciones Adaptadas:
-                </span>
-                <p>
-                  Cada funcionalidad es creada para satisfacer tus necesidades
-                  específicas, asegurando que cada detalle esté alineado con tus
-                  objetivos.
-                </p>
-              </section>
-            </li>
-            <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center pt-20 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0 lg:px-10 bg-white dark:bg-card">
-              <Image
-                src={"/web/diseno.webp"}
-                alt="Imagen de un icono de diseño."
-                width={100}
-                height={100}
-              />
-              <section className="pt-10 pb-20">
-                <span
-                  className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}
-                >
-                  Escalabilidad y Flexibilidad:
-                </span>
-                <p>
-                  Nuestros desarrollos permiten la expansión y adaptación
-                  conforme a la evolución de tu negocio.
-                </p>
-              </section>
-            </li>
-            <li className="text-stone-700 dark:text-stone-300 flex flex-col justify-center items-center pt-20 shadow-md border border-slate-200 dark:border-slate-700 rounded-lg mx-4 lg:mx-0 lg:px-10 bg-white dark:bg-card">
-              <Image
-                src={"/web/diseno.webp"}
-                alt="Imagen de un icono de diseño."
-                width={100}
-                height={100}
-              />
-              <section className="pt-10 pb-20">
-                <span
-                  className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}
-                >
-                  Integraciones Efectivas:
-                </span>
-                <p>
-                  Implementamos soluciones que se integran con tus herramientas
-                  y sistemas actuales para maximizar la eficiencia.
-                </p>
-              </section>
-            </li>
+                <Image
+                  src={advantage.imageSrc}
+                  alt={`Imagen de un icono de ${advantage.title.toLowerCase()}`}
+                  width={500}
+                  height={500}
+                  className="h-40 w-auto"
+                />
+                <section className="pt-10 pb-10 px-6 text-center">
+                  <span
+                    className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}
+                  >
+                    {advantage.title}
+                  </span>
+                  <p>{advantage.content}</p>
+                </section>
+              </li>
+            ))}
           </ul>
         </div>
 
-        {/* CTA Final */}
         <Button onClick={handleConsultation}>
           Solicita una consulta gratuita
         </Button>
