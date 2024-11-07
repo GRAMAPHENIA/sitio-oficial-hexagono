@@ -46,7 +46,6 @@ const CustomDevelopment = () => {
           >
             Desarrollo
           </h1>
-          <section>
             <p className="text-md text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-balance">
               <span className="font-bold">Soluciones personalizadas</span> para
               tu negocio. Nos dedicamos a crear aplicaciones y{" "}
@@ -55,7 +54,6 @@ const CustomDevelopment = () => {
               <span className="font-bold">específicas de tu empresa</span> y
               ayudarte a alcanzar tus metas.
             </p>
-          </section>
         </div>
 
         <div className="text-center">
