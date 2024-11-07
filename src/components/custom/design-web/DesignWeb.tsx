@@ -84,7 +84,7 @@ const DesignWeb = () => {
                   >
                     {advantage.title}
                   </span>
-                  <p className="mt-5">{advantage.content}</p>
+                  <p className="px-16 lg:px-0 text-balance">{advantage.content}</p>
                 </section>
               </li>
             ))}
