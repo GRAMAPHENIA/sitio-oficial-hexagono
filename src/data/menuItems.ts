@@ -22,7 +22,7 @@ export const menuItems: MenuItemProps[] = [
       {
         href: "/diseno-web",
         title: "Diseño Web",
-        description: "Descubre nuestros servicios de diseño web.",
+        description: "Descubre nuestros servicios de diseño web.", 
       },
       {
         href: "/desarrollo-a-medida",

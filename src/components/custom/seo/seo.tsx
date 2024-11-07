@@ -13,19 +13,19 @@ const seoAdvantages = [
     title: "Visibilidad",
     content:
       "Aumentamos la presencia de tu sitio web en los motores de búsqueda, lo que mejora significativamente su exposición y alcance.",
-    imageSrc: "/icons/custom-dev/soluciones.png",
+    imageSrc: "/icons/seo/visibilidad.png",
   },
   {
     title: "Tráfico",
     content:
       "Nuestras técnicas de SEO están diseñadas para atraer más visitantes, mejorando el tráfico sin necesidad de publicidad pagada.",
-    imageSrc: "/icons/custom-dev/soluciones.png",
+    imageSrc: "/icons/seo/trafico.png",
   },
   {
     title: "Optimización",
     content:
       "Nos encargamos continuamente tu estrategia de SEO para adaptarla a las nuevas tendencias y algoritmos.",
-    imageSrc: "/icons/custom-dev/soluciones.png",
+    imageSrc: "/icons/seo/optimizacion.png",
   },
 ];
 
@@ -47,9 +47,14 @@ const SEO = () => {
             SEO
           </h1>
           <p className="text-md text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-balance">
-            Optimización para Motores de Búsqueda. Mejoramos la visibilidad de
-            tu sitio web en los resultados de búsqueda, aumentando su tráfico y
-            posicionamiento en Google y otros buscadores.
+            <span className="font-bold italic">
+              Optimización para Motores de Búsqueda
+            </span>
+            . Mejoramos la <span className="font-bold italic">visibilidad</span>{" "}
+            de tu sitio web en los resultados de búsqueda, aumentando su tráfico
+            y{" "}
+            <span className="font-bold italic">posicionamiento en Google</span>{" "}
+            y otros buscadores.
           </p>
         </div>
 
@@ -74,7 +79,9 @@ const SEO = () => {
                   >
                     {advantage.title}
                   </span>
-                  <p className="px-16 lg:px-0 text-balance">{advantage.content}</p>
+                  <p className="px-16 lg:px-0 text-balance">
+                    {advantage.content}
+                  </p>
                 </section>
               </li>
             ))}

@@ -1,4 +1,4 @@
-import CustomDevelopment from "@/components/custom/desarrollo-a-medida/custom-development";
+import CustomDevelopment from "@/components/custom/custom-development/custom-development";
 import React from "react";
 
 const page = () => { 
