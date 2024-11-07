@@ -24,13 +24,16 @@ export default function Header() {
         Crea tu sitio web con
       </h1>
       <span
-        className={`${merriweather.className} text-6xl lg:text-9xl font-black text-gray-600 dark:text-gray-300 mb-6`}
+        className={`${merriweather.className} text-6xl lg:text-9xl font-black text-chart-5 dark:text-chart-5 mb-6`}
       >
         Hexágono
       </span>
-      <p className="lg:text-xl text-gray-500 dark:text-gray-300 max-w-72 md:max-w-md lg:max-w-lg mb-16">
-        Ofrecemos soluciones de diseño y desarrollo web para impulsar tu
-        negocio.
+      <p className="lg:text-xl text-gray-500 dark:text-gray-400 max-w-72 md:max-w-md lg:max-w-lg mb-16">
+        Ofrecemos{" "}
+        <span className="font-semibold text-hexagon dark:text-hexagon-foreground italic">
+          soluciones de diseño y desarrollo web
+        </span>{" "}
+        para impulsar tu negocio.
       </p>
       <Button
         onClick={handleBudget}

@@ -11,7 +11,7 @@ export const projects: Project[] = [
   },
   {
     title: "El 'Metodo' ADULMA",
-    description: "Metodo de Gimnasia para Adultos Mayores",
+    description: "Gimnasia para Adultos Mayores",
     imageSrc: "/portfolio/metodo.svg",
     altText: "El Metodo ADULMA",
     url: "https://elmetodoadulma.com",

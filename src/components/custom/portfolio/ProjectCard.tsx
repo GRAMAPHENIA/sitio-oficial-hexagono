@@ -11,7 +11,7 @@ interface ProjectCardProps {
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Card className="p-6 shadow-md mx-4 lg:mx-0">
-      <CardContent>
+      <CardContent className="flex flex-col justify-between items-center h-full border p-4 rounded-lg">
         <Image
           src={project.imageSrc}
           alt={project.altText}
