@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Merriweather } from "next/font/google";
-import { useRouter } from "next/navigation";
+import { useCallback } from "react";
 
 const merriweather = Merriweather({
   subsets: ["latin"],
@@ -10,21 +10,22 @@ const merriweather = Merriweather({
 });
 
 export default function Header() {
-  const router = useRouter();
-
-  const handleBudget = () => {
-    router.push("/#contact-form");
-  };
+  const handleBudget = useCallback(() => {
+    const contactForm = document.getElementById("contact-form");
+    if (contactForm) {
+      contactForm.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
 
   return (
     <header className="flex flex-col items-center justify-center text-center py-28">
       <h1
-        className={`${merriweather.className} text-2xl lg:text-7xl font-black text-gray-800 dark:text-gray-400 mb-2 lg:mb-6`}
+        className={`${merriweather.className} text-2xl lg:text-[62px] font-black text-slate-600 dark:text-slate-300 mb-2 lg:mb-6`}
       >
         Crea tu sitio web con
       </h1>
       <span
-        className={`${merriweather.className} text-6xl lg:text-9xl font-black text-chart-5 dark:text-chart-5 mb-6`}
+        className={`${merriweather.className} text-6xl lg:text-9xl font-black text-hexagon dark:text-hexagon mb-6`}
       >
         Hexágono
       </span>
@@ -35,6 +36,7 @@ export default function Header() {
         </span>{" "}
         para impulsar tu negocio.
       </p>
+
       <Button
         onClick={handleBudget}
         className="bg-gray-800 text-white hover:bg-gray-700 mt-10 mb-1o"

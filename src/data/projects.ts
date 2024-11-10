@@ -5,7 +5,7 @@ export const projects: Project[] = [
   {
     title: "Lutheria",
     description: "Sitio web para el Luthier Esteban Di corato",
-    imageSrc: "/portfolio/luthier.svg",
+    imageSrc: "/portfolio/luthier.webp",
     altText: "Lutheria",
     url: "https://www.dicorato.com.ar",
   },

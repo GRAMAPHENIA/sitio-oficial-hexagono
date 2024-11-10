@@ -17,12 +17,11 @@ export default function FeatureCard({ feature }: FeatureCardProps) {
             alt={feature.alt}
             width={300}
             height={300}
-            className="bg-slate-200/60 dark:bg-slate-600/10 rounded-full border border-slate-300 dark:border-slate-500 ;
-            "
+            className="h-40 w-auto"
           />
         </div>
         <CardTitle
-          className={`${exo2.className} text-2xl font-semibold text-slate-800 dark:text-slate-200 mb-2`}
+          className={`${exo2.className} text-2xl font-semibold text-slate-600 dark:text-slate-300 mb-2`}
         >
           {feature.title}
         </CardTitle>

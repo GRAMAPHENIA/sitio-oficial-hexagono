@@ -1,8 +1,6 @@
-// import { ReactNode } from "react";
-
 export interface Feature {
-  iconSrc: string; // URL de la imagen
-  alt: string; // Texto alternativo para la imagen
+  iconSrc: string;
+  alt: string;
   title: string;
   description: string;
 }
