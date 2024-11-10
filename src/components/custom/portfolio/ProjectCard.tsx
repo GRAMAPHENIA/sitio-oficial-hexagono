@@ -1,4 +1,4 @@
-// import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import type { Project } from "@/types/portfolio";
@@ -12,13 +12,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Card className="p-6 shadow-md mx-4 lg:mx-0">
       <CardContent className="flex flex-col justify-between items-center h-full border p-4 rounded-lg">
-        {/* <Image
+        <Image
           src={project.imageSrc}
           alt={project.altText}
-          className="w-auto h-60 m-auto"
+          className="w-auto h-40 m-auto"
           width={400}
           height={400}
-        /> */}
+        />
         <CardTitle className="mt-4 ">{project.title}</CardTitle>
         <p className="text-gray-600">{project.description}</p>
 

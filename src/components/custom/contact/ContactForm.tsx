@@ -13,7 +13,7 @@ export default function ContactForm() {
   return (
     <section
       id="contact-form"
-      className="m-auto text-center lg:rounded-t-md border border-input px-4 w-full text-sm bg-white dark:bg-[#13141A] shadow-lg py-12 mt-24"
+      className="scroll-m-10 m-auto text-center lg:rounded-t-md border border-input px-4 w-full text-sm bg-white dark:bg-[#13141A] shadow-lg py-12 mt-24"
     >
       <h2
         className={`${vollkorn.className} text-7xl font-black text-slate-600 text-center`}
