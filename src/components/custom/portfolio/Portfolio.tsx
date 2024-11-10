@@ -17,7 +17,7 @@ export default function Portfolio() {
       <p className="text-xl text-gray-500 dark:text-gray-300 max-w-sm md:max-w-md lg:max-w-lg mb-16">
         Conoce cómo nuestros proyectos destacan por la calidad y creatividad en cada solución de diseño y desarrollo web.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-8">
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} /> 
         ))}

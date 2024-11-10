@@ -10,18 +10,17 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <Card className="p-6 shadow-md mx-4 lg:mx-0">
-      <CardContent className="flex flex-col justify-between items-center h-full border p-4 rounded-lg">
+    <Card className="p-6 shadow-md w-[390px]">
+      <CardContent className=" border p-4 rounded-lg">
+        <CardTitle className="mt-10 mb-2 text-4xl">{project.title}</CardTitle>
+        <p className="text-gray-600 mb-10">{project.description}</p>
         <Image
           src={project.imageSrc}
           alt={project.altText}
-          className="w-auto h-40 m-auto"
+          className="w-auto h-28 m-auto"
           width={400}
           height={400}
         />
-        <CardTitle className="mt-4 ">{project.title}</CardTitle>
-        <p className="text-gray-600">{project.description}</p>
-
         {/* El botón ahora usa Link directamente con el href del proyecto */}
         <Link
           href={project.url}
@@ -29,7 +28,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           rel="noopener noreferrer"
           passHref
         >
-          <Button className="mt-10">Ver sitio</Button>
+          <Button className="my-10">Ver sitio</Button>
         </Link>
       </CardContent>
     </Card>
