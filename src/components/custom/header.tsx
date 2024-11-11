@@ -18,7 +18,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="flex flex-col items-center justify-center text-center py-28">
+    <header className="flex flex-col items-center justify-center text-center py-40">
       <h1
         className={`${merriweather.className} text-2xl lg:text-[62px] font-black text-slate-600 dark:text-slate-300 mb-2 lg:mb-6`}
       >

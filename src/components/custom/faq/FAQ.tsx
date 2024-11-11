@@ -5,7 +5,7 @@ import { Accordion } from "@/components/ui/accordion";
 
 export default function FAQ() {
   return (
-    <section className="flex flex-col justify-center items-center mt-24">
+    <section className="flex flex-col justify-center items-center mb-40 px-4">
       <h2
         className={`${vollkorn.className} text-4xl lg:text-7xl font-black text-slate-600 dark:text-slate-300`}
       >
