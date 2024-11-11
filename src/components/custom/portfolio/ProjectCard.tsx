@@ -11,10 +11,14 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <Card className="p-6 shadow-md w-[390px]">
+    <Card className="p-6 shadow-md">
       <CardContent className={`${exo2.className} border p-4 rounded-lg text-slate-600`}>
         <CardTitle className="mt-10 mb-2 text-4xl">{project.title}</CardTitle>
         <p className="text-gray-600 mb-10">{project.description}</p>
+        <p className="text-xl text-gray-500 dark:text-gray-300 max-w-sm md:max-w-md lg:max-w-lg mb-16">
+        Descubrí lo que nuestros clientes tienen para decir sobre su experiencia
+        con nuestros servicios.
+      </p>
         <Image
           src={project.imageSrc}
           alt={project.altText}

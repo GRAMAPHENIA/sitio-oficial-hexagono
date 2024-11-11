@@ -22,7 +22,7 @@ export default function TestimonialsSection() {
       {/* Contenedor de los testimonios */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-8">
         {mockTestimonials.map((testimonial, index) => (
-          <TestimonialCard key={index} testimonial={testimonial} />
+          <TestimonialCard key={index} testimonial={testimonial} /> 
         ))}
       </div>
     </section>
