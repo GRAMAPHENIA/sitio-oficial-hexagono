@@ -39,7 +39,7 @@ export default function Header() {
 
       <Button
         onClick={handleBudget}
-        className="bg-gray-800 text-white hover:bg-gray-700 mt-10 mb-1o"
+        className=""
         size="lg"
         variant="default"
       >

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import type { Project } from "@/types/portfolio";
 import { Button } from "@/components/ui/button";
+import { exo2 } from "@/styles/fonts";
 
 interface ProjectCardProps {
   project: Project;
@@ -11,7 +12,7 @@ interface ProjectCardProps {
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Card className="p-6 shadow-md w-[390px]">
-      <CardContent className=" border p-4 rounded-lg text-slate-600">
+      <CardContent className={`${exo2.className} border p-4 rounded-lg text-slate-600`}>
         <CardTitle className="mt-10 mb-2 text-4xl">{project.title}</CardTitle>
         <p className="text-gray-600 mb-10">{project.description}</p>
         <Image
