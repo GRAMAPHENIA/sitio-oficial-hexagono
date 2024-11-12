@@ -1,19 +1,21 @@
-import { ServiceCategory } from "@/types/services";
-
-export const servicesData: ServiceCategory = {
-  label: "Servicios",
-  links: [
-    {
-      href: "/hosting",
-      title: "Hosting",
-      description:
-        "El servicio de hosting es el lugar donde tu sitio web vive en Internet. Con nuestro hosting confiable y rápido, tu página estará siempre disponible para tus usuarios. Incluimos soporte técnico y una configuración optimizada para tu sitio.",
-    },
-    {
-      href: "/dominio",
-      title: "Dominio",
-      description:
-        "El dominio es la dirección web que tus clientes utilizarán para encontrarte (ejemplo: www.tunegocio.com). Nosotros te ayudamos a elegir y registrar el dominio perfecto para tu marca, asegurando tu presencia en línea.",
-    },
-  ],
-};
+export const servicesData = [
+  {
+    title: "SEO",
+    content:
+      "Optimización para motores de búsqueda para aumentar la visibilidad de tu sitio.",
+    imageSrc: "/icons/services/seo.png",
+    imageAlt: "Imagen de un icono de SEO.",
+  },
+  {
+    title: "Marketing Digital",
+    content: "Estrategias para promocionar tu marca y atraer más clientes.",
+    imageSrc: "/icons/services/marketing.png",
+    imageAlt: "Imagen de un icono de marketing digital.",
+  },
+  {
+    title: "Soporte",
+    content: "Asistencia continua para mantener y optimizar tu sitio web.",
+    imageSrc: "/icons/services/soporte.png",
+    imageAlt: "Imagen de un icono de soporte.",
+  },
+];
