@@ -12,21 +12,21 @@ const advantages = [
   {
     title: "Diseño",
     content:
-      "Nos aseguramos de que cada elemento del sitio no solo sea visualmente atractivo, sino también funcional y alineado con las metas de tu negocio.",
+      "Nos aseguramos de que cada elemento del sitio sea visualmente atractivo, funcional y esté alineado con las metas de tu negocio.",
     imageSrc: "/icons/web-design/diseno.png",
     imageAlt: "Imagen de un icono de diseño.",
   },
   {
     title: "Conversión",
     content:
-      "Optimizamos el diseño de tu sitio web para convertir visitantes en clientes, ajustándolo estratégicamente a los objetivos de tu negocio.",
+      "Optimizamos el diseño de tu sitio web para convertir visitantes en clientes, alineándolo a los objetivos de tu negocio.",
     imageSrc: "/icons/web-design/conversion.png",
     imageAlt: "Imagen de un icono de conversión.",
   },
   {
     title: "UX",
     content:
-      "Enfocamos nuestros esfuerzos en crear una experiencia de usuario fluida y agradable, facilitando la navegación y el acceso a la información.",
+      "Enfocamos nuestros esfuerzos en crear una experiencia de usuario fluida, facilitando la navegación y el acceso a la información.",
     imageSrc: "/icons/web-design/ux.png",
     imageAlt: "Imagen de un icono de experiencia de usuario.",
   },
@@ -40,7 +40,7 @@ const DesignWeb = () => {
   };
 
   return (
-    <section className="flex flex-col items-center mx-auto text-center pb-12"> 
+    <section className="flex flex-col items-center mx-auto text-center pb-12">
       <div className="mx-auto px-6 mt-12">
         {/* Hero Section */}
         <div>
@@ -65,7 +65,7 @@ const DesignWeb = () => {
 
         {/* Ventajas de Nuestro Enfoque */}
         <div className="text-center">
-          <ul className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-5xl mx-auto pt-2">
+          <ul className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-5xl mx-auto py-4">
             {advantages.map((advantage, index) => (
               <li
                 key={index}
@@ -78,7 +78,7 @@ const DesignWeb = () => {
                   height={500}
                   className="h-40 w-auto"
                 />
-                <section className="pt-10 pb-10 px-6 text-center">
+                <section className="py-10 px-6 text-center">
                   <span
                     className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}
                   >

@@ -70,7 +70,7 @@ const CustomDevelopment = () => {
                   height={500}
                   className="h-40 w-auto"
                 />
-                <section className="pt-10 pb-10 px-6 text-center">
+                <section className="py-10 px-6 text-center">
                   <span
                     className={`${vollkorn.className} text-2xl lg:text-4xl font-extrabold text-stone-700 dark:text-stone-300 mb-6`}
                   >

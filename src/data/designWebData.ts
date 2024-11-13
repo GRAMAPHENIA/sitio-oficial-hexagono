@@ -5,7 +5,7 @@ export const designWebFeatures: Feature[] = [
   {
     title: "Diseño Personalizado",
     description:
-      "Cada negocio es único, por lo que cada sitio web debe reflejar esa singularidad. Trabajamos codo a codo contigo para diseñar una web que exprese perfectamente tu marca.",
+      "Cada negocio es único, por lo que cada sitio web debe reflejar esa singularidad. Trabajamos con vos para diseñar una web que exprese perfectamente tu marca.",
   },
   {
     title: "Optimización Responsive",
