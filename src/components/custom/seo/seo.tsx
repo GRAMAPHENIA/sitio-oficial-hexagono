@@ -60,7 +60,7 @@ const SEO = () => {
 
         {/* Ventajas de Nuestro Enfoque */}
         <div className="text-center">
-          <ul className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-5xl mx-auto py-12">
+          <ul className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-5xl mx-auto py-4">
             {seoAdvantages.map((advantage, index) => (
               <li
                 key={index}

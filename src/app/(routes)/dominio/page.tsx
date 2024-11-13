@@ -28,17 +28,21 @@ const Dominio: React.FC = () => {
             <p className="text-md text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-balance">
               El dominio es{" "}
               <span className="font-bold italic">la dirección</span> que las
-              personas ingresan <span className="font-bold italic">para encontrar tu sitio web</span> en Internet.{" "}
-              <span className="font-bold italic">Ofrecemos la gestión</span> y configuración de dominios,{" "}
-              asegurando que esté vinculado correctamente a tu hosting y{" "}
-              funcionando de forma óptima.
+              personas ingresan{" "}
+              <span className="font-bold italic">
+                para encontrar tu sitio web
+              </span>{" "}
+              en Internet.{" "}
+              <span className="font-bold italic">Ofrecemos la gestión</span> y
+              configuración de dominios, asegurando que esté vinculado
+              correctamente a tu hosting y funcionando de forma óptima.
             </p>
           </section>
         </div>
 
         {/* Ventajas de Nuestro Enfoque */}
         <div className="text-center">
-          <ul className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-5xl mx-auto py-12">
+          <ul className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-5xl mx-auto py-4">
             {advantages.map((advantage, index) => (
               <li
                 key={index}
@@ -46,7 +50,7 @@ const Dominio: React.FC = () => {
               >
                 <Image
                   src={advantage.imageSrc}
-                  alt={advantage.imageAlt}
+                  alt={`Imagen de un icono de ${advantage.imageAlt.toLowerCase()}`}
                   width={500}
                   height={500}
                   className="h-40 w-auto"
