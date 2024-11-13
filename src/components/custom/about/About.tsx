@@ -3,7 +3,7 @@
 import { exo2, vollkorn } from "@/styles/fonts";
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub, FaGlobe, FaLinkedin } from "react-icons/fa"; // Todos los iconos de react-icons
+import { FaGithub, FaGlobe, FaLinkedin } from "react-icons/fa"; 
 import { RiInstagramFill } from "react-icons/ri";
 
 const AboutUs = () => {
@@ -42,10 +42,7 @@ const AboutUs = () => {
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 my-20 ">
             {developers.map((dev, index) => (
-              <div
-                key={index}
-                className=""
-              >
+              <div key={index} className="">
                 <Image
                   src={dev.image}
                   alt={dev.name}
@@ -65,7 +62,7 @@ const AboutUs = () => {
                   {dev.description}
                 </p>
                 <div className="flex justify-center space-x-2 pt-4">
-                  <Link 
+                  <Link
                     href={dev.github}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -82,7 +79,7 @@ const AboutUs = () => {
                     <FaLinkedin size={20} />{" "}
                     {/* Icono de LinkedIn con ExternalLink */}
                   </Link>
-                  <Link 
+                  <Link
                     href={dev.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
