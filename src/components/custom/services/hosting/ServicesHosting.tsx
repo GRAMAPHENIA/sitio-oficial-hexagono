@@ -41,7 +41,7 @@ const Hosting = () => {
               >
                 <Image
                   src={feature.imageSrc}
-                  alt={feature.imageAlt}
+                  alt={`Imagen de un icono de ${feature.imageAlt.toLowerCase()}`}
                   width={500}
                   height={500}
                   className="h-40 w-auto"

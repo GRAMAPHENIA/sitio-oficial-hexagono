@@ -7,7 +7,7 @@ export const projects: Project[] = [
     description: "Página corporativa",
     imageSrc: "/portfolio/corporativa.webp",
     altText: "Lutheria",
-    url: "https://www.dicorato.com.ar",
+    url: "https://next-page-luthier.vercel.app/",
   },
   {
     title: "Adulma",

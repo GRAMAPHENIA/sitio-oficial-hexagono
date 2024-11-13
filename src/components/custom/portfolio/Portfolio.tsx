@@ -2,7 +2,6 @@ import ProjectCard from "@/components/custom/portfolio/ProjectCard";
 import { projects } from "@/data/projects";
 import { vollkorn } from "@/styles/fonts";
 
-// Componente principal que muestra la sección de Portfolio
 export default function Portfolio() {
   return (
     <section className="flex flex-col justify-center items-center text-center mb-40">

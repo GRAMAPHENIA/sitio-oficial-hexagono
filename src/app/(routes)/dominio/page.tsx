@@ -11,10 +11,15 @@ const Dominio = () => {
           Dominio
         </h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
-          El dominio es la dirección que las personas ingresan para encontrar tu
-          sitio web en Internet. Ofrecemos la gestión y configuración de
-          dominios, asegurando que esté vinculado correctamente a tu hosting y
-          funcionando de forma óptima.
+          El dominio es <span className="font-bold italic">la dirección</span>{" "}
+          que las personas ingresan{" "}
+          <span className="font-bold italic">para encontrar tu sitio web</span>{" "}
+          en Internet.
+          <span className="font-bold italic"> Ofrecemos la gestión</span> y
+          configuración de dominios,{" "}
+          <span className="font-bold italic">asegurando que esté </span>
+          vinculado correctamente a tu hosting y{" "}
+          <span className="font-bold italic">funcionando de forma óptima.</span>
         </p>
         <section className="mb-20 "></section>
       </div>
