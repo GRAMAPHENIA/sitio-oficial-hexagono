@@ -22,7 +22,7 @@ export default function Topbar() {
           width={300}
           height={300}
           style={{ width: "30px", height: "auto" }} // Control del tamaño por CSS
-          src={"/brand/logo-hexagono.png"}
+          src={"/brand/logo-hexagono.webp"}
           alt="Logo"
         />
       </div>

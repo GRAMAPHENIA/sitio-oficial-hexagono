@@ -11,7 +11,7 @@ const AboutUs = () => {
     {
       name: "Dylan Server",
       role: "Frontend Developer",
-      image: "/clients/avatar-she-another.webp",
+      image: "/avatars/avatar-she-another.webp",
       description: "Desarrollo con React y diseño de interfaces de usuario.",
       github: "https://github.com/BirdieOA",
       linkedin: "https://www.linkedin.com/in/mait%C3%A9-de-le%C3%B3n/",
@@ -21,7 +21,7 @@ const AboutUs = () => {
     {
       name: "Rojo Server",
       role: "Frontend Developer",
-      image: "/clients/avatar-he.webp",
+      image: "/avatars/avatar-he.webp",
       description: "Desarrollo con React y diseño de interfaces de usuario.",
       github: "https://github.com/GRAMAPHENIA",
       linkedin: "https://www.linkedin.com/in/dicoratojuanpablo/",
