@@ -3,7 +3,7 @@
 import { exo2, vollkorn } from "@/styles/fonts";
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub, FaGlobe, FaLinkedin } from "react-icons/fa"; 
+import { FaGithub, FaGlobe, FaLinkedin } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 
 const AboutUs = () => {
@@ -46,9 +46,9 @@ const AboutUs = () => {
                 <Image
                   src={dev.image}
                   alt={dev.name}
-                  width={150}
-                  height={150}
-                  className="rounded-full mx-auto mb-4 border-4 border-slate-300 dark:border-slate-500"
+                  width={200}
+                  height={200}
+                  className="mx-auto mb-4"
                 />
                 <h3
                   className={`${exo2.className} text-2xl font-semibold text-slate-800 dark:text-slate-200 `}
