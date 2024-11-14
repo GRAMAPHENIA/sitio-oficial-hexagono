@@ -7,6 +7,7 @@ export const menuMobileItems: MenuMobileItem[] = [
   { label: "Seo", href: "/seo" },
   { label: "Hosting", href: "/hosting" },
   { label: "Dominio", href: "/dominio" },
+  { label: "Precios", href: "/precios" },
   { label: "Acerca de", href: "/sobre-nosotros" },
   { label: "Contacto", href: "/#contact-form" },
 ];

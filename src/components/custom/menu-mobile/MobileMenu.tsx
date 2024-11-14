@@ -17,11 +17,11 @@ const MobileMenu = () => {
   return (
     <Popover onOpenChange={setIsOpen}>
       <PopoverTrigger>
-        <Menu className="h-6 w-6" />
+        <Menu className="h-8 w-8 text-hexagon" />
       </PopoverTrigger>
 
       <PopoverContent
-        className="p-4 bg-white dark:bg-card"
+        className="p-4 bg-white/50 dark:bg-card/50 backdrop-blur-2xl mt-4 w-screen rounded-none "
         aria-hidden={!isOpen} // Oculta del lector de pantalla cuando no está abierto
       >
         {menuMobileItems.map((item: MenuMobileItem, index: number) => (
