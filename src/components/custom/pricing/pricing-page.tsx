@@ -12,11 +12,11 @@ const vollkorn = Vollkorn({
 export default function PricingPage() {
   return (
     <section>
-      <div className="bg-background min-h-screen mt-20">
-        <header className="text-secondary-foreground py-8 text-center">
+      <div className="bg-background min-h-screen mt-28">
+        <header className="text-secondary-foreground py-10 text-center">
           <div className="container mx-auto px-4 ">
             <h2
-              className={`${vollkorn.className} text-4xl lg:text-8xl font-black text-slate-600 dark:text-slate-300`}
+              className={`${vollkorn.className} text-6xl lg:text-8xl font-black text-slate-600 dark:text-slate-300`}
             >
               Nuestros Planes
             </h2>
@@ -25,7 +25,7 @@ export default function PricingPage() {
             </p>
           </div>
         </header>
-        <main className="px-0 lg:px-40 ">
+        <main className="px-4 lg:px-40 ">
           <PricingTable webPlans={webPlans} socialPlans={socialPlans} />
         </main>
       </div>
