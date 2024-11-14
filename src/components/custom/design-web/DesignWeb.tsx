@@ -13,21 +13,21 @@ const advantages = [
     title: "Diseño",
     content:
       "Nos aseguramos de que cada elemento del sitio sea visualmente atractivo, funcional y esté alineado con las metas de tu negocio.",
-    imageSrc: "/icons/web-design/diseno.png",
+    imageSrc: "/icons/features/web-design/diseno.webp",
     imageAlt: "Imagen de un icono de diseño.",
   },
   {
     title: "Conversión",
     content:
       "Optimizamos el diseño de tu sitio web para convertir visitantes en clientes, alineándolo a los objetivos de tu negocio.",
-    imageSrc: "/icons/web-design/conversion.png",
+    imageSrc: "/icons/features/web-design/conversion.webp",
     imageAlt: "Imagen de un icono de conversión.",
   },
   {
     title: "UX",
     content:
       "Enfocamos nuestros esfuerzos en crear una experiencia de usuario fluida, facilitando la navegación y el acceso a la información.",
-    imageSrc: "/icons/web-design/ux.png",
+    imageSrc: "/icons/features/web-design/ux.webp",
     imageAlt: "Imagen de un icono de experiencia de usuario.",
   },
 ];

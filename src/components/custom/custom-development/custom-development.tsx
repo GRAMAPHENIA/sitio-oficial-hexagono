@@ -13,19 +13,19 @@ const advantages = [
     title: "Soluciones",
     content:
       "Cada funcionalidad es creada para satisfacer tus necesidades específicas, asegurando que cada detalle esté alineado con tus objetivos.",
-    imageSrc: "/icons/custom-dev/soluciones.png",
+    imageSrc: "/icons/features/custom-dev/soluciones.webp",
   },
   {
     title: "Escalabilidad",
     content:
       "Nuestros desarrollos permiten la expansión y adaptación conforme a la evolución de tu negocio.",
-    imageSrc: "/icons/custom-dev/escalabilidad.png",
+    imageSrc: "/icons/features/custom-dev/escalabilidad.webp",
   },
   {
     title: "Integraciones",
     content:
       "Implementamos soluciones que se integran con tus herramientas y sistemas actuales para maximizar la eficiencia.",
-    imageSrc: "/icons/custom-dev/integraciones.png",
+    imageSrc: "/icons/features/custom-dev/integraciones.webp",
   },
 ];
 

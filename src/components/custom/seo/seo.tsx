@@ -13,19 +13,19 @@ const seoAdvantages = [
     title: "Visibilidad",
     content:
       "Aumentamos la presencia de tu sitio web en los motores de búsqueda, lo que mejora significativamente su exposición y alcance.",
-    imageSrc: "/icons/seo/visibilidad.png",
+    imageSrc: "/icons/features/seo/visibilidad.webp",
   },
   {
     title: "Tráfico",
     content:
       "Nuestras técnicas de SEO están diseñadas para atraer más visitantes, mejorando el tráfico sin necesidad de publicidad pagada.",
-    imageSrc: "/icons/seo/trafico.png",
+    imageSrc: "/icons/features/seo/trafico.webp",
   },
   {
     title: "Optimización",
     content:
       "Nos encargamos continuamente tu estrategia de SEO para adaptarla a las nuevas tendencias y algoritmos.",
-    imageSrc: "/icons/seo/optimizacion.png",
+    imageSrc: "/icons/features/seo/optimizacion.webp",
   },
 ];
 
