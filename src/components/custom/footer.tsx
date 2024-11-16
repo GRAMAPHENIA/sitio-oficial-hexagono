@@ -1,6 +1,21 @@
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 
+const socialLinks = [
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com/hexagono.xyz",
+  },
+  {
+    name: "Facebook",
+    href: "https://www.facebook.com/hexagono.xyz",
+  },
+  {
+    name: "WhatsApp",
+    href: "https://wa.me/5492944398098",
+  },
+];
+
 export function Footer() {
   return (
     <div className="bg-card px-20 py-12 mt-20 border-t border-black/10 dark:border-white/10">
@@ -12,29 +27,14 @@ export function Footer() {
       </div>
       <Separator className="my-4" />
       <div className="flex h-5 items-center space-x-4 text-sm">
-        <Link
-          href="https://www.instagram.com/hexagono.xyz"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Instagram
-        </Link>
-        <Separator orientation="vertical" />
-        <Link
-          href="https://www.facebook.com/hexagono.xyz"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Facebook
-        </Link>
-        <Separator orientation="vertical" />
-        <Link
-          href="https://wa.me/5492944398098"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          WhatsApp
-        </Link>
+        {socialLinks.map((link, index) => (
+          <div key={link.name} className="flex items-center space-x-4">
+            <Link href={link.href} target="_blank" rel="noopener noreferrer">
+              {link.name}
+            </Link>
+            {index < socialLinks.length - 1 && <Separator orientation="vertical" />}
+          </div>
+        ))}
       </div>
     </div>
   );
