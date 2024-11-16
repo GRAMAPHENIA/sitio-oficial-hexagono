@@ -14,7 +14,7 @@ export const webPlans: PricingPlan[] = [
       "Formulario de Contacto",
       "Enlaces a redes sociales",
       "Cuenta de correo",
-      "Certificado SSL",
+      "Galería de fotos"
     ],
     price: 75000,
     currency: "$",
@@ -33,7 +33,7 @@ export const webPlans: PricingPlan[] = [
       "Formulario de contacto",
       "Enlaces a redes sociales",
       "Cuenta de correo",
-      "Certificado SSL",
+      "Galería de fotos"
     ],
     price: 130000, // Precio promedio entre 15 y 20 horas de trabajo
     currency: "$",
