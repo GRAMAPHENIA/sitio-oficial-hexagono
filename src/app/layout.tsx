@@ -5,7 +5,6 @@ import "./globals.css";
 export const metadata = {
   title: "Hexágono",
   description: "Creado por Hexágono",
-  viewport: "width=device-width, initial-scale=1", // Vista responsiva
   icons: {
     icon: "/icon.png", // Icono de la página
   },
@@ -16,6 +15,8 @@ export const metadata = {
     type: "website",
   },
 };
+
+export const viewport = "width=device-width, initial-scale=1";
 
 export default function RootLayout({
   children,

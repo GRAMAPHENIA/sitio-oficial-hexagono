@@ -13,6 +13,7 @@ export async function GET() {
     { loc: `${baseUrl}/hosting`, lastmod: new Date().toISOString() },
     { loc: `${baseUrl}/dominio`, lastmod: new Date().toISOString() },
     { loc: `${baseUrl}/sobre-nosotros`, lastmod: new Date().toISOString() },
+    { loc: `${baseUrl}/precios`, lastmod: new Date().toISOString() },
   ];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
