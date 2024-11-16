@@ -1,6 +1,6 @@
 import { MenuItemProps } from "@/types/menu";
 
-export const menuItems: MenuItemProps[] = [
+export const menuItems: MenuItemProps[] = [ 
   {
     label: "Inicio",
     links: [
@@ -12,7 +12,7 @@ export const menuItems: MenuItemProps[] = [
       {
         href: "/#contact-form",
         title: "Contacto",
-        description: "Ponte en contacto con nosotros para más información.",
+        description: "Ponete en contacto con nosotros para más información.",
       },
     ],
   },

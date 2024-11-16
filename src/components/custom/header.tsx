@@ -18,14 +18,14 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="flex flex-col items-center justify-center text-center py-40">
+    <header className="flex flex-col items-center justify-center text-center pt-28 pb-40 lg:py-40">
       <h1
         className={`${merriweather.className} text-2xl lg:text-[62px] font-black text-slate-600 dark:text-slate-300 mb-2 lg:mb-6`}
       >
         Crea tu sitio web con
       </h1>
       <span
-        className={`${merriweather.className} text-6xl lg:text-9xl font-black text-hexagon dark:text-hexagon mb-6`}
+        className={`${merriweather.className} text-6xl lg:text-9xl font-black text-hexagon dark:text-hexagon mb-12`}
       >
         Hexágono
       </span>
