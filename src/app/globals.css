@@ -80,3 +80,16 @@
   @apply bg-cover bg-center; /* Opcional: para cubrir y centrar la imagen */
   background-image: url("/fondos/fondo-pie.png");
 }
+
+@keyframes bounce-smooth {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Ajusta el rango a tu preferencia */
+  }
+}
+
+.animate-bounce-smooth {
+  animation: bounce-smooth 2.5s ease-in-out infinite;
+}
