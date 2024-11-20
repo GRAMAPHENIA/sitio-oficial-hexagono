@@ -19,8 +19,9 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="flex flex-col lg:flex-row justify-center items-center text-center mb-40 mt-10 gap-40 ">
+    <header className="flex flex-col lg:flex-row justify-center items-center text-center mb-40 mt-10 gap-40 max-w-7xl m-auto">
       <section className="flex flex-col items-center text-center p-20">
+        {/* Titulo principal */}
         <h1
           className={`${merriweather.className} text-2xl lg:text-[50px] font-black text-slate-600 dark:text-slate-300 mb-2 lg:mb-6`}
         >
@@ -46,15 +47,15 @@ export default function Header() {
 
       <section>
         <Image
-          className="h-[600px] w-auto animate-bounce-smooth relative z-10 bottom-12"
+          className="h-[600px] w-auto animate-bounce-smooth relative z-10 bottom-0"
           width={1100} height={1100}
           src={"/hero-image/hero-image.png"}
           alt={"Imagen vectorial de un sistema con dispositivos electronicos"} />
-        <Image
+        {/* <Image
           className="h-[680px] w-auto absolute top-0 right-0 mt-10 -z-10"
           width={1000} height={1000}
           src={"/platform/platform.png"}
-          alt={"Imagen vectorial de un sistema con dispositivos electronicos"} />
+          alt={"Imagen vectorial de un sistema con dispositivos electronicos"} /> */}
       </section>
 
     </header>

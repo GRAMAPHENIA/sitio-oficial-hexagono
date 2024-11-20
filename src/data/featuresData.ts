@@ -2,21 +2,21 @@ import type { Feature } from "@/types/feature";
 
 export const featuresData: Feature[] = [
   {
-    iconSrc: "/icons/features/web-design/diseno.webp",
+    iconSrc: "/features-icons/web-design.png",
     alt: "Diseño Web",
     title: "Diseño Web",
     description:
       "Desarrollamos sitios web atractivos y funcionales para tu negocio.",
   },
   {
-    iconSrc: "/icons/features/custom-dev/escalabilidad.webp",
+    iconSrc: "/features-icons/design.png",
     alt: "Desarrollo a Medida",
     title: "Desarrollo a Medida",
     description:
       "Soluciones personalizadas adaptadas a tus necesidades específicas.",
   },
   {
-    iconSrc: "/icons/features/seo/visibilidad.webp",
+    iconSrc: "/features-icons/seo.png",
     alt: "SEO",
     title: "SEO",
     description:

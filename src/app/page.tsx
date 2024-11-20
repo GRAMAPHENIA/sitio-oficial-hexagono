@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <>
       <Topbar />
-      <Header />
-      <div className="min-h-screen max-w-7xl flex flex-col items-center m-auto">
+      <div className="flex flex-col items-center m-auto">
+        <Header />
         <Features />
         <Testimonial />
         <Portfolio />

@@ -20,6 +20,10 @@ const config: Config = {
           DEFAULT: "hsl(var(--hexagon))",
           foreground: "hsl(var(--hexagon-foreground))",
         },
+        bgsection: {
+          DEFAULT: "hsl(var(--bgsection))",
+          foreground: "hsl(var(--bgsection-foreground))",
+        },
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
