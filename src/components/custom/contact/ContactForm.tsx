@@ -13,7 +13,7 @@ export default function ContactForm() {
   return (
     <section
       id="contact-form"
-      className="scroll-m-10 m-auto text-center lg:rounded-t-md border border-input px-4 w-full text-sm bg-white dark:bg-[#13141A] shadow-lg py-12 max-w-7xl "
+      className="scroll-m-10 m-auto text-center lg:rounded-t-md border border-input px-4 w-full text-sm bg-white dark:bg-[#13141A] shadow-box py-12 max-w-7xl "
     >
       {/* Título de la sección */}
       <h2

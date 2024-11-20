@@ -11,7 +11,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <Card className="p-4 shadow-md">
+    <Card className="p-4 shadow-box">
       <CardContent
         className={`${exo2.className} border p-4 rounded-lg text-slate-600`}
       >
