@@ -26,6 +26,13 @@ export default function FeatureCard({ feature }: FeatureCardProps) {
             height={300}
             className="h-44 w-auto absolute top-20 right-8 -z-10"
           />
+           <Image
+            src="/base-features/base-dark.png"
+            alt="cosas"
+            width={300}
+            height={300}
+            className="h-44 w-auto absolute top-20 right-8 -z-10 hidden dark:block"
+          />
         </div>
         <CardTitle
           className={`${exo2.className} text-2xl font-semibold text-slate-600 dark:text-slate-300 mb-2 mt-10`}

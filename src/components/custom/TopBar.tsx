@@ -17,7 +17,7 @@ export default function Topbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="p-4 w-full flex justify-between items-center bg-white dark:bg-card border-b z-50">
+    <div className="p-4 w-full flex justify-between items-center bg-white dark:bg-card z-50">
       <Link href={"/"} className="flex items-center">
         <Image
           width={300}

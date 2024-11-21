@@ -13,15 +13,15 @@ export default function ContactForm() {
   return (
     <section
       id="contact-form"
-      className="scroll-m-10 m-auto text-center lg:rounded-t-md border border-input px-4 w-full text-sm bg-white dark:bg-[#13141A] shadow-box py-12 max-w-7xl "
+      className="scroll-m-10 m-auto text-center lg:rounded-xl border border-input px-4 w-full text-sm bg-white dark:bg-hexagon shadow-box py-12 max-w-7xl"
     >
       {/* Título de la sección */}
       <h2
-        className={`${vollkorn.className} text-7xl font-black text-slate-600 text-center`}
+        className={`${vollkorn.className} text-7xl font-black text-slate-700 text-center`}
       >
         Contacto
       </h2>
-      <p className="text-xl text-gray-500 dark:text-gray-300 mb-16">
+      <p className="text-xl text-gray-500 dark:text-slate-600 mb-16">
         Ponete en contacto con nosotros.
       </p>
       <form
@@ -29,7 +29,7 @@ export default function ContactForm() {
         className="mt-8 max-w-2xl mx-auto"
       >
         <div className="mb-4">
-          <Input {...register("name")} placeholder="Nombre" />
+          <Input {...register("name")} placeholder="Nombre" className="text-slate-600 dark:border-slate-400 dark:bg-hexagon-foreground" />
           {errors.name && (
             <p className="text-red-500 mt-2">{errors.name.message}</p>
           )}
@@ -39,18 +39,19 @@ export default function ContactForm() {
             {...register("email")}
             placeholder="Correo Electrónico"
             type="email"
+            className="text-slate-600 dark:border-slate-400 dark:bg-hexagon-foreground"
           />
           {errors.email && (
             <p className="text-red-500 mt-2">{errors.email.message}</p>
           )}
         </div>
         <div className="mb-4">
-          <Textarea {...register("message")} placeholder="Mensaje" />
+          <Textarea {...register("message")} placeholder="Mensaje" className="text-slate-600 dark:border-slate-400 dark:bg-hexagon-foreground" />
           {errors.message && (
             <p className="text-red-500 mt-2">{errors.message.message}</p>
           )}
         </div>
-        <Button type="submit" disabled={submitting}>
+        <Button type="submit" disabled={submitting} className="dark:bg-slate-800 hover:bg-slate-700">
           {submitting ? "Enviando..." : "Enviar"}
         </Button>
       </form>

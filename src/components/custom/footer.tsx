@@ -18,7 +18,7 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <div className="bg-card px-20 py-12 mt-20 border-t border-black/10 dark:border-white/10">
+    <div className="bg-card px-20 py-12 mt-40 border-t border-black/10 dark:border-white/10">
       <div className="space-y-1">
         <h4 className="text-sm font-medium leading-none">Hexágono</h4>
         <p className="text-sm text-muted-foreground">

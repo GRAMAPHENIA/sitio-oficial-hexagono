@@ -5,13 +5,13 @@ import { Accordion } from "@/components/ui/accordion";
 
 export default function FAQ() {
   return (
-    <section className="flex flex-col justify-center items-center mb-40 px-4">
+    <section className="flex flex-col justify-center items-center px-4">
       <h2
         className={`${vollkorn.className} text-4xl lg:text-7xl font-black text-slate-600 dark:text-slate-300`}
       >
         Preguntas Frecuentes
       </h2>
-      <div className="w-[350px] lg:w-[600px] pt-16 ">
+      <div className="w-[350px] lg:w-[600px] pt-20">
         <Accordion type="single" collapsible>
           {faqItems.map((item) => (
             <FAQItem key={item.value} item={item} />

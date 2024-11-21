@@ -11,7 +11,7 @@ interface TestimonialCardProps {
 export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
   return (
     <Card className="bg-transparent border-none shadow-none relative">
-      <CardContent className="flex flex-col justify-between items-center h-full border px-24 py-10 rounded-lg border-none">
+      <CardContent className="flex flex-col justify-between items-center h-full border px-24 rounded-lg border-none">
         <Avatar src={testimonial.avatarUrl} name={testimonial.name} />
         <p className="text-lg w-[230px] text-slate-600 text-center -translate-y-12 -translate-x-5 z-10 text-pretty">{testimonial.quote}</p>
         <div className="z-50 mb-20 -translate-x-5">

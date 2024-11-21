@@ -16,10 +16,10 @@ export default function TestimonialsSection() {
         ¿Qué dicen nuestros clientes?
       </h2>
       {/* Descripción de la sección */}
-      {/* <p className="text-xl lg:text-xl text-gray-500 dark:text-gray-300 max-w-sm md:max-w-md lg:max-w-lg mb-16 px-4 text-balance">
+      <p className="text-xl lg:text-xl text-gray-500 dark:text-gray-300 max-w-sm md:max-w-md lg:max-w-lg mb-16 px-4 text-balance">
         Descubrí algunas de las experiencias
         con nuestros servicios.
-      </p> */}
+      </p>
       <div className="mb-20"></div>
       {/* Contenedor de los testimonios */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
