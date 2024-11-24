@@ -13,11 +13,11 @@ export default function ContactForm() {
   return (
     <section
       id="contact-form"
-      className="scroll-m-10 m-auto text-center lg:rounded-xl border border-input px-4 w-full text-sm bg-white dark:bg-hexagon shadow-box py-12 max-w-7xl"
+      className="scroll-m-10 m-auto text-center lg:rounded-xl border border-input px-4 w-full text-sm bg-white dark:bg-hexagon shadow-box py-16 max-w-4xl"
     >
       {/* Título de la sección */}
       <h2
-        className={`${vollkorn.className} text-7xl font-black text-slate-700 text-center`}
+        className={`${vollkorn.className}  text-4xl lg:text-7xl font-black text-slate-600 dark:text-slate-700 px-4`}
       >
         Contacto
       </h2>

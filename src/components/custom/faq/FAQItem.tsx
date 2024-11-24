@@ -11,7 +11,7 @@ interface FAQItemProps {
 
 export default function FAQItem({ item }: FAQItemProps) {
   return (
-    <AccordionItem value={item.value} className="px-4 border m-2 rounded-lg bg-card shadow-box text-hexagon ">
+    <AccordionItem value={item.value} className="px-4 border m-2 rounded-lg bg-white dark:bg-[#B6C9DC] shadow-box text-slate-700 ">
       <AccordionTrigger className="text-left">{item.question}</AccordionTrigger>
       <AccordionContent>{item.answer}</AccordionContent>
     </AccordionItem>
