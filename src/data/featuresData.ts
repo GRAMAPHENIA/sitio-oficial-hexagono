@@ -6,20 +6,20 @@ export const featuresData: Feature[] = [
     alt: "Diseño Web",
     title: "Diseño Web",
     description:
-      "Desarrollamos sitios web atractivos y funcionales para tu negocio.",
+      "Sitios web atractivos.",
   },
   {
     iconSrc: "/features-icons/design.png",
     alt: "Desarrollo a Medida",
     title: "Desarrollo a Medida",
     description:
-      "Soluciones personalizadas adaptadas a tus necesidades específicas.",
+      "Soluciones personalizadas.",
   },
   {
     iconSrc: "/features-icons/seo.png",
     alt: "SEO",
     title: "SEO",
     description:
-      "Optimizamos tu sitio web para mejorar su visibilidad en motores de búsqueda.",
+      "Optimizamos tu sitio web.",
   },
 ];

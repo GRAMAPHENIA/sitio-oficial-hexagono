@@ -1,5 +1,5 @@
-import { Card, CardContent, CardTitle } from "@/components/ui/card";
-import { Avatar } from "./Avatar";
+import { Card, CardTitle } from "@/components/ui/card";
+import Image from "next/image";
 import { exo2 } from "@/styles/fonts";
 import type { Testimonial } from "@/types/testimonial";
 
@@ -9,24 +9,43 @@ interface TestimonialCardProps {
 
 export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
   return (
-    <Card className="bg-transparent border-none shadow-none relative">
-      <CardContent className="relative flex flex-col items-center h-full px-8 rounded-lg">
-        {/* Avatar */}
-        <div className="relative">
-          <Avatar src={testimonial.avatarUrl} name={testimonial.name} />
+    <Card key={testimonial.id} className="border-none bg-transparent shadow-none relative my-10">
+      <div className="relative w-full h-[550px] overflow-hidden">
+        {/* Imagen de fondo */}
+        <Image
+          src={testimonial.imageLight}
+          alt="Fondo Testimonial"
+          width={600}
+          height={600}
+          className="absolute top-0 left-0 w-full h-full object-contain block dark:hidden"
+        />
+        <Image
+          src={testimonial.imageDark}
+          alt="Fondo Testimonial Oscuro"
+          width={600}
+          height={600}
+          className="absolute top-0 left-0 w-full h-full object-contain hidden dark:block"
+        />
 
-          {/* Superposición de textos centrados */}
-          <div className="absolute mt-10 inset-0 flex flex-col justify-center items-center text-center">
-            <p className="text-md w-[230px] text-slate-600 z-10">{testimonial.quote}</p>
-          </div>
-        </div>
+        {/* Contenido superpuesto */}
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-left">
+          {/* Cita */}
+          <p className="text-sm w-[180px] text-slate-800/90 z-10 mb-4 mt-4 px-2 text-balance ">
+            {testimonial.quote}
+          </p>
 
-        {/* Información adicional debajo de la imagen */}
-        <div className="z-50 mt-4 text-center">
-          <CardTitle className={`${exo2.className} text-lg`}>{testimonial.name}</CardTitle>
-          <p className="text-sm text-gray-500">{testimonial.position}</p>
+          {/* Nombre */}
+          <CardTitle
+            className={`${exo2.className} text-left text-lg font-semibold text-slate-800/90 z-10 mb-2`}
+          >
+            {testimonial.name}
+          </CardTitle>
+
+          {/* Información adicional */}
+          <p className="text-sm text-slate-300 dark:text-slate-600 z-10">{testimonial.position}</p>
+          <p className="text-xs text-slate-400 dark:text-slate-800 z-10">{testimonial.specialty}</p>
         </div>
-      </CardContent>
+      </div>
     </Card>
   );
 }

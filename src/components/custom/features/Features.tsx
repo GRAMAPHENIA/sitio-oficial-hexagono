@@ -13,11 +13,11 @@ export default function Features() {
       >
         Características
       </h1>
-      <p className="text-xl text-gray-500 dark:text-gray-300 max-w-sm md:max-w-md lg:max-w-lg mb-16 px-4">
+      {/* <p className="text-xl text-gray-500 dark:text-gray-300 max-w-sm md:max-w-md lg:max-w-lg px-4">
         Explora lo que hace que nuestro desarrollo y diseño web sean la mejor
         opción para impulsar tu negocio.
-      </p>
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-8 ">
+      </p> */}
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  py-10">
         {featuresData.map((feature, index) => (
           <FeatureCard key={index} feature={feature} /> 
         ))}

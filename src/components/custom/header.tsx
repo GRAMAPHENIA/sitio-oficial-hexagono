@@ -20,10 +20,10 @@ export default function Header() {
 
   return (
     <header className="flex flex-col lg:flex-row justify-center items-center mb-40 mt-10 gap-40 max-w-7xl m-auto">
-      <section className="flex flex-col items-start text-left p-20">
+      <section className="flex flex-col items-start text-left px-10">
         {/* Titulo principal */}
         <h1
-          className={`${merriweather.className} text-2xl lg:text-[50px] font-black text-slate-600 dark:text-slate-200 mb-2 lg:mb-6 text-left`}
+          className={`${merriweather.className} text-2xl lg:text-[50px] font-black text-slate-600 dark:text-slate-200 mb-2 mt-20 lg:mb-6 text-left`}
         >
           Crea <span className="dark:text-blue-200">tu sitio web</span>  con
         </h1>
@@ -45,19 +45,19 @@ export default function Header() {
         </Button>
       </section>
 
-      <section>
+      <section className="relative">
         <Image
-          className="h-[400px] w-auto animate-bounce-smooth relative z-10 bottom-0"
-          width={1100} height={1100}
+          className="h-[400px] w-auto animate-bounce-smooth z-10 bottom-0 px-16"
+          width={1200} height={1100}
           src={"/hero-image/hero-image.png"}
           alt={"Imagen vectorial de un sistema con dispositivos electronicos"} />
         <Image
-          className="h-[680px] w-auto absolute top-0 right-0 -z-10 dark:hidden"
+          className="h-[600px] w-auto absolute -top-20 right-0 -z-10 dark:hidden"
           width={1000} height={1000}
           src={"/base-header/base-header.png"}
           alt={"Imagen vectorial de un sistema con dispositivos electronicos"} />
         <Image
-          className="h-[680px] w-auto absolute top-0 right-0 -z-10 hidden dark:block"
+          className="h-[600px] w-auto absolute -top-20 right-0 -z-10 hidden dark:block"
           width={1000} height={1000}
           src={"/base-header/base-header-dark.png"}
           alt={"Imagen vectorial de un sistema con dispositivos electronicos"} />

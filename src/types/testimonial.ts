@@ -1,7 +1,11 @@
+// types/testimonial.ts
+
 export interface Testimonial {
-    quote: string;
-    name: string;
-    position: string;
-    avatarUrl: string;
-  }
-  
+  id: number;
+  name: string;
+  position: string;
+  quote: string;
+  specialty: string;
+  imageLight: string;
+  imageDark: string;
+}

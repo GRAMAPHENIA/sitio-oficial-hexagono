@@ -15,10 +15,7 @@ El **Sitio de Hexágono** es una agencia de diseño y desarrollo web especializa
 ## Características del Sitio
 
 - **Diseño Responsivo**: Todos nuestros sitios están optimizados para verse bien en dispositivos móviles, tabletas y computadoras de escritorio.
-- **SEO Amigable**: Implementamos buenas prácticas de SEO para mejorar la visibilidad en los motores de búsqueda.
+- **SEO**: Implementamos buenas prácticas de SEO para mejorar la visibilidad en los motores de búsqueda.
 - **Experiencia de Usuario**: Nos enfocamos en la usabilidad y la accesibilidad para ofrecer una excelente experiencia a los visitantes.
 - **Rendimiento**: Optimizamos el rendimiento de carga para que los sitios sean rápidos y eficientes.
 
-# Tecnologias
-
-toast
