@@ -19,16 +19,16 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="flex flex-col lg:flex-row justify-center items-center mb-40 mt-10 gap-40 max-w-7xl m-auto">
-      <section className="flex flex-col items-start text-left px-10">
+    <header className="flex flex-col lg:flex-row justify-center items-center mb-40 mt-36 lg:mt-28 gap-10 lg:gap-40 max-w-7xl m-auto">
+      <section className="flex flex-col items-center lg:items-start text-center lg:text-left ">
         {/* Titulo principal */}
         <h1
-          className={`${merriweather.className} text-2xl lg:text-[50px] font-black text-slate-600 dark:text-slate-200 mb-2 mt-20 lg:mb-6 text-left`}
+          className={`${merriweather.className} text-2xl lg:text-[50px] font-black text-slate-600 dark:text-slate-200 mb-2 lg:mt-20 lg:mb-6 text-center lg:text-left`}
         >
-          Crea <span className="dark:text-blue-200">tu sitio web</span>  con
+          Crea tu sitio web  con
         </h1>
         <span
-          className={`${merriweather.className} text-6xl lg:text-[103px] font-black text-hexagon dark:text-slate-400 mb-8`}
+          className={`${merriweather.className} text-5xl lg:text-[103px] font-black text-hexagon  dark:text-slate-400 mb-8`}
         >
           Hexágono
         </span>
@@ -40,27 +40,37 @@ export default function Header() {
           para impulsar tu negocio.
         </p>
 
-        <Button onClick={handleBudget} className="" size="lg" variant="default">
+        <Button onClick={handleBudget} className="mb-24" size="lg" variant="default">
           Solicita un presupuesto
         </Button>
       </section>
 
       <section className="relative">
         <Image
-          className="h-[400px] w-auto animate-bounce-smooth z-10 bottom-0 px-16"
-          width={1200} height={1100}
-          src={"/hero-image/hero-image.png"}
+          className="h-[200px] lg:h-[500px] w-auto animate-bounce-smooth z-10 bottom-0"
+          width={1200} height={1200}
+          src={"/hero-image/hero-image-dos.png"}
           alt={"Imagen vectorial de un sistema con dispositivos electronicos"} />
-        <Image
-          className="h-[600px] w-auto absolute -top-20 right-0 -z-10 dark:hidden"
-          width={1000} height={1000}
+
+        {/* Imagen para modo light (base-header.png) */}
+        {/* <Image
+          className="lg:h-[600px] w-auto absolute -top-20 right-0 -z-10 hidden lg:block dark:hidden"
+          width={1000}
+          height={1000}
           src={"/base-header/base-header.png"}
-          alt={"Imagen vectorial de un sistema con dispositivos electronicos"} />
-        <Image
-          className="h-[600px] w-auto absolute -top-20 right-0 -z-10 hidden dark:block"
-          width={1000} height={1000}
+          alt={"Imagen vectorial de un sistema con dispositivos electrónicos"}
+        /> */}
+
+        {/* Imagen para modo dark (base-header-dark.png) */}
+        {/* <Image
+          className="lg:h-[600px] w-auto absolute -top-20 right-0 -z-10 hidden lg:dark:block"
+          width={1000}
+          height={1000}
           src={"/base-header/base-header-dark.png"}
-          alt={"Imagen vectorial de un sistema con dispositivos electronicos"} />
+          alt={"Imagen vectorial de un sistema con dispositivos electrónicos"}
+        /> */}
+
+
       </section>
 
     </header>

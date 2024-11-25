@@ -17,12 +17,12 @@ export default function Topbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="p-4 w-full flex justify-between items-center bg-white dark:bg-card z-50">
+    <div className="p-4 lg:px-10 w-full flex justify-between items-center bg-white dark:bg-card z-50 lg:fixed border-b border-slate-100 dark:border-slate-900">
       <Link href={"/"} className="flex items-center">
         <Image
           width={300}
           height={300}
-          style={{ width: "30px", height: "auto" }} // Control del tamaño por CSS
+          style={{ width: "28px", height: "auto" }} // Control del tamaño por CSS
           src={"/brand/logo-hexagono.webp"}
           alt="Logo"
         />
