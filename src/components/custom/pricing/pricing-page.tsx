@@ -12,7 +12,7 @@ const vollkorn = Vollkorn({
 export default function PricingPage() {
   return (
     <section>
-      <div className="bg-background min-h-screen mt-28">
+      <div className="bg-background min-h-screen pt-28">
         <header className="text-secondary-foreground py-10 text-center">
           <div className="container mx-auto px-4 ">
             <h2
