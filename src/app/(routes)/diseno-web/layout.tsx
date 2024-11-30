@@ -10,7 +10,8 @@ export const metadata: Metadata = {
   description: "Creado por Hexágono, diseño web moderno y efectivo.",
   openGraph: {
     title: "Diseño Web - Hexágono",
-    description: "Expertos en diseño web que transforman la imagen de tu negocio en línea.",
+    description:
+      "Expertos en diseño web que transforman la imagen de tu negocio en línea.",
     url: "https://www.hexagono.xyz/diseno-web",
     type: "website",
     images: ["/path-to-image.jpg"],
@@ -18,7 +19,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Diseño Web - Hexágono",
-    description: "Potencia tu presencia digital con nuestros servicios de diseño web.",
+    description:
+      "Potencia tu presencia digital con nuestros servicios de diseño web.",
     images: ["/path-to-image.jpg"],
   },
   icons: {

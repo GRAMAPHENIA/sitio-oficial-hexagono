@@ -41,7 +41,7 @@ const DesignWeb = () => {
 
   return (
     <section className="flex flex-col items-center mx-auto text-center pb-12">
-      <div className="mx-auto px-6 mt-12">
+      <div className="mx-auto px-6 mt-12 lg:mt-24">
         {/* Hero Section */}
         <div>
           <h1

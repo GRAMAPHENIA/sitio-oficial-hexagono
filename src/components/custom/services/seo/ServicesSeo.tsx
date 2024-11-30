@@ -15,7 +15,7 @@ const Seo = () => {
 
   return (
     <section className="flex flex-col items-center mx-auto text-center pb-12">
-      <div className="mx-auto px-6 mt-12">
+      <div className="mx-auto px-6 mt-12 lg:mt-24">
         <div>
           <h1
             className={`${vollkorn.className} text-4xl lg:text-6xl font-extrabold text-slate-800 dark:text-slate-200 mt-5`}

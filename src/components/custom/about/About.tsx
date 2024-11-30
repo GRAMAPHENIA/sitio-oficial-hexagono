@@ -19,7 +19,7 @@ const AboutUs = () => {
       globe: "https://www.hexagono.xyz/",
     },
     {
-      name: "",
+      name: "Juan Di corato",
       role: "Frontend Developer",
       image: "/avatars/avatar-he.webp",
       description: "Desarrollo con React y diseño de interfaces de usuario.",
@@ -34,7 +34,7 @@ const AboutUs = () => {
     <section className="flex flex-col items-center mx-auto text-center">
       <div className="mx-auto px-6 max-w-7xl">
         {/* Developers Section */}
-        <div className="mb-20">
+        <div className="mb-20 lg:mt-24">
           <h2
             className={`${vollkorn.className} text-4xl lg:text-7xl font-extrabold text-slate-800 dark:text-slate-200 mb-6 my-20`}
           >

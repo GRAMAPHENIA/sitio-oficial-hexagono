@@ -7,10 +7,12 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Desarrollo a medida - Hexágono",
-  description: "Creado por Hexágono, especialistas en desarrollo a medida y soluciones personalizadas.",
+  description:
+    "Creado por Hexágono, desarrollo a medida y soluciones personalizadas.",
   openGraph: {
     title: "Desarrollo a Medida - Hexágono",
-    description: "Soluciones personalizadas de desarrollo web para transformar tu negocio.",
+    description:
+      "Soluciones personalizadas de desarrollo web para transformar tu negocio.",
     url: "https://www.hexagono.xyz/desarrollo-a-medida",
     type: "website",
     images: ["/logo-hexagono.webp"],
@@ -18,7 +20,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Desarrollo a Medida - Hexágono",
-    description: "Transforma tu negocio con nuestras soluciones de desarrollo web a medida.",
+    description:
+      "Transforma tu negocio con nuestras soluciones de desarrollo web a medida.",
     images: ["/logo-hexagono.webp"],
   },
 };

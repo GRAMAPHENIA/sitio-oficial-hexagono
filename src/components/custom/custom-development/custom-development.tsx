@@ -38,7 +38,7 @@ const CustomDevelopment = () => {
 
   return (
     <section className="flex flex-col items-center mx-auto text-center pb-12">
-      <div className="mx-auto px-6 mt-12">
+      <div className="mx-auto px-6 mt-12 lg:mt-24">
         {/* Hero Section */}
         <div>
           <h1
@@ -46,14 +46,14 @@ const CustomDevelopment = () => {
           >
             Desarrollo
           </h1>
-            <p className="text-md text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-balance">
-              <span className="font-bold italic">Soluciones personalizadas</span> para
-              tu negocio. Nos dedicamos a crear aplicaciones y{" "}
-              <span className="font-bold italic">funcionalidades a medida</span>,
-              diseñadas para cubrir las necesidades específicas
-              <span className="font-bold italic"> de tu empresa</span> y
-              ayudarte a alcanzar tus metas.
-            </p>
+          <p className="text-md text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-balance">
+            <span className="font-bold italic">Soluciones personalizadas</span>{" "}
+            para tu negocio. Nos dedicamos a crear aplicaciones y{" "}
+            <span className="font-bold italic">funcionalidades a medida</span>,
+            diseñadas para cubrir las necesidades específicas
+            <span className="font-bold italic"> de tu empresa</span> y ayudarte
+            a alcanzar tus metas.
+          </p>
         </div>
 
         <div className="text-center">
@@ -76,7 +76,9 @@ const CustomDevelopment = () => {
                   >
                     {advantage.title}
                   </span>
-                  <p className="px-16 lg:px-0 text-balance">{advantage.content}</p>
+                  <p className="px-16 lg:px-0 text-balance">
+                    {advantage.content}
+                  </p>
                 </section>
               </li>
             ))}
