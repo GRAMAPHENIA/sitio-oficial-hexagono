@@ -9,7 +9,7 @@ import { RiInstagramFill } from "react-icons/ri";
 const AboutUs = () => {
   const developers = [
     {
-      name: "Dylan Server",
+      name: "Maité De leon",
       role: "Frontend Developer",
       image: "/avatars/avatar-she-another.webp",
       description: "Desarrollo con React y diseño de interfaces de usuario. ",
@@ -19,7 +19,7 @@ const AboutUs = () => {
       globe: "https://www.hexagono.xyz/",
     },
     {
-      name: "Rojo Server",
+      name: "",
       role: "Frontend Developer",
       image: "/avatars/avatar-he.webp",
       description: "Desarrollo con React y diseño de interfaces de usuario.",
