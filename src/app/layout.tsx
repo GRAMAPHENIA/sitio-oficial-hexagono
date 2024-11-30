@@ -4,9 +4,9 @@ import "./globals.css";
 
 export const metadata = {
   title: "Hexágono",
-  description: "Creado por Hexágono",
+  description: "Creado por Hexágono, diseño y desarrollo web.",
   icons: {
-    icon: "/icon.png", // Icono de la página
+    icon: "/icon.png",
   },
   openGraph: {
     title: "Hexágono",
@@ -16,15 +16,16 @@ export const metadata = {
   },
 };
 
-export const viewport = "width=device-width, initial-scale=1";
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es">
+    <html lang="es" suppressHydrationWarning>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
       <body className="antialiased">
         <ThemeProvider
           attribute="class"

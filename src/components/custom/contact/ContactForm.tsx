@@ -17,7 +17,7 @@ export default function ContactForm() {
     >
       {/* Título de la sección */}
       <h2
-        className={`${vollkorn.className}  text-4xl lg:text-7xl font-black text-slate-600 dark:text-slate-700 px-4`}
+        className={`${vollkorn.className} text-4xl lg:text-7xl font-black text-slate-600 dark:text-slate-700 px-4`}
       >
         Contacto
       </h2>
@@ -29,7 +29,12 @@ export default function ContactForm() {
         className="mt-8 max-w-2xl mx-auto"
       >
         <div className="mb-4">
-          <Input {...register("name")} placeholder="Nombre" className="text-slate-600 dark:border-slate-400 dark:bg-hexagon-foreground" />
+          <Input
+            {...register("name")}
+            placeholder="Nombre"
+            className="text-slate-600 dark:border-slate-400 dark:bg-hexagon-foreground"
+            autoComplete="name"
+          />
           {errors.name && (
             <p className="text-red-500 mt-2">{errors.name.message}</p>
           )}
@@ -40,18 +45,28 @@ export default function ContactForm() {
             placeholder="Correo Electrónico"
             type="email"
             className="text-slate-600 dark:border-slate-400 dark:bg-hexagon-foreground"
+            autoComplete="email"
           />
           {errors.email && (
             <p className="text-red-500 mt-2">{errors.email.message}</p>
           )}
         </div>
         <div className="mb-4">
-          <Textarea {...register("message")} placeholder="Mensaje" className="text-slate-600 dark:border-slate-400 dark:bg-hexagon-foreground" />
+          <Textarea
+            {...register("message")}
+            placeholder="Mensaje"
+            className="text-slate-600 dark:border-slate-400 dark:bg-hexagon-foreground"
+            autoComplete="off"
+          />
           {errors.message && (
             <p className="text-red-500 mt-2">{errors.message.message}</p>
           )}
         </div>
-        <Button type="submit" disabled={submitting} className="dark:bg-slate-800 hover:bg-slate-700">
+        <Button
+          type="submit"
+          disabled={submitting}
+          className="dark:bg-slate-800 hover:bg-slate-700"
+        >
           {submitting ? "Enviando..." : "Enviar"}
         </Button>
       </form>
