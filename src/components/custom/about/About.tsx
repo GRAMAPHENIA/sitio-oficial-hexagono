@@ -12,7 +12,7 @@ const AboutUs = () => {
       name: "Dylan Server",
       role: "Frontend Developer",
       image: "/avatars/avatar-she-another.webp",
-      description: "Desarrollo con React y diseño de interfaces de usuario.",
+      description: "Desarrollo con React y diseño de interfaces de usuario. ",
       github: "https://github.com/BirdieOA",
       linkedin: "https://www.linkedin.com/in/mait%C3%A9-de-le%C3%B3n/",
       instagram: "https://www.instagram.com/birdie.borda/",
