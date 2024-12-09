@@ -1,5 +1,5 @@
 export interface Project {
-  id: Key | null | undefined;
+  id: string | number | null | undefined;
   title: string;
   description: string;
   imageSrc: string;
