@@ -3,6 +3,7 @@ import type { Project } from "@/types/portfolio";
 
 export const projects: Project[] = [
   {
+    id: 0,
     title: "Lutheria",
     description: "Página corporativa",
     imageSrc: "/portfolio/corporativa.webp",
@@ -10,6 +11,7 @@ export const projects: Project[] = [
     url: "https://next-page-luthier.vercel.app/",
   },
   {
+    id: 1,
     title: "Adulma",
     description: "Página corporativa",
     imageSrc: "/portfolio/corporativa.webp",
@@ -17,6 +19,7 @@ export const projects: Project[] = [
     url: "https://elmetodoadulma.com",
   },
   {
+    id: 2,
     title: "Babushka",
     description: "Landing Page",
     imageSrc: "/portfolio/landing.webp",
