@@ -17,7 +17,7 @@ export default function Header() {
 
   return (
     <header
-      className="flex flex-col lg:flex-row justify-center items-center mb-40 mt-36 lg:mt-28 gap-10 lg:gap-40 max-w-7xl m-auto px-6 sm:px-10"
+      className="flex flex-col lg:flex-row justify-center items-center mb-20 mt-36 lg:mt-28 gap-10 lg:gap-40 max-w-7xl m-auto px-6 sm:px-10"
       role="banner"
     >
       <section className="flex flex-col items-center lg:items-start text-center lg:text-left">
@@ -53,7 +53,7 @@ export default function Header() {
 
       <section className="relative">
         <Image
-          className="h-[200px] sm:h-[300px] lg:h-[500px] w-auto animate-bounce-smooth z-10"
+          className="h-[300px] sm:h-[300px] lg:h-[500px] w-auto animate-bounce-smooth z-10"
           width={1200}
           height={1200}
           src={"/hero-image/hero-image-dos.png"}

@@ -15,8 +15,8 @@ export default function Home() {
       <div className="flex flex-col items-center m-auto">
         <Header />
         <Features />
-        <Testimonial />
         <Portfolio />
+        <Testimonial />
         <FAQ />
         <CTA />
         <ContactForm />
