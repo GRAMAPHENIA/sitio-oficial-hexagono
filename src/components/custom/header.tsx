@@ -56,7 +56,7 @@ export default function Header() {
           className="h-[300px] sm:h-[300px] lg:h-[500px] w-auto animate-bounce-smooth z-10"
           width={1200}
           height={1200}
-          src={"/hero-image/hero-image-dos.png"}
+          src={"/base-header/hero-image.webp"}
           alt="Ilustración de un sistema con dispositivos electrónicos en un diseño futurista"
           priority
         />

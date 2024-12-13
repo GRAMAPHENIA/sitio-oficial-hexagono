@@ -82,11 +82,6 @@
 
 /* Customs */
 
-.bg-contact {
-  @apply bg-cover bg-center; /* Opcional: para cubrir y centrar la imagen */
-  background-image: url("/fondos/fondo-pie.png");
-}
-
 .animate-bounce-smooth {
   animation: bounce-smooth 2.5s ease-in-out infinite;
 }
