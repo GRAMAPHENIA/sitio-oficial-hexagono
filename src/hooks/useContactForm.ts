@@ -1,11 +1,11 @@
 import { useForm as useReactHookForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { schema, FormValues } from "../utils/validation";
-import { useToast } from "@/components/ui/use-toast"; 
+import { useToast } from "@/components/ui/use-toast";
 import { useState } from "react";
 
 export function useContactForm() {
-  const { addToast } = useToast(); 
+  const { addToast } = useToast();
   const {
     register,
     handleSubmit: handleReactHookSubmit,
@@ -44,7 +44,7 @@ export function useContactForm() {
           status: "error",
         });
       }
-    } catch (error) {
+    } catch {
       addToast({
         title: "Error",
         description: "Hubo un problema al enviar el correo.",

@@ -1,5 +1,7 @@
 // src/app/api/sitemap/route.ts
 
+export const dynamic = "force-static";  // Fuerza la ruta a ser estática
+
 import { NextResponse } from 'next/server';
 
 export async function GET() {
