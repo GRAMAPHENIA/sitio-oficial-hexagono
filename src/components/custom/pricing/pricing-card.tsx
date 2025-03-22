@@ -1,3 +1,5 @@
+'use client'
+
 import { Key } from "react";
 import {
   Card,
@@ -7,8 +9,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-// import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+import { useRouter } from 'next/navigation';
 
 interface PricingPlan {
   id: Key;
@@ -26,6 +29,7 @@ interface PricingCardProps {
 }
 
 export function PricingCard({ plan }: PricingCardProps) {
+  const router = useRouter();
   const {
     name = "N/A",
     title = "",
@@ -72,12 +76,13 @@ export function PricingCard({ plan }: PricingCardProps) {
           </ul>
         </CardContent>
         <CardFooter>
-          {/* <Button
+          <Button
             className="w-full"
             variant={available ? "default" : "secondary"}
+            onClick={() => window.location.href = "/#contact-form"}
           >
             {available ? "Comenzar" : "inscribirse en la lista de espera"}
-          </Button> */}
+          </Button>
         </CardFooter>
       </Card>
     </div>
