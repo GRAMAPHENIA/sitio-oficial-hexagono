@@ -11,7 +11,6 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
-import { useRouter } from 'next/navigation';
 
 interface PricingPlan {
   id: Key;
@@ -29,7 +28,6 @@ interface PricingCardProps {
 }
 
 export function PricingCard({ plan }: PricingCardProps) {
-  const router = useRouter();
   const {
     name = "N/A",
     title = "",
@@ -60,10 +58,8 @@ export function PricingCard({ plan }: PricingCardProps) {
           <div className="mb-4">
             <span className="text-3xl font-bold">
               {currency}
-              {/* Para generar precios con punto de mil */}
-              {price.toLocaleString("es-AR")}{" "}
+              {price.toLocaleString("es-AR")} {" "}
             </span>
-            {/* <span className="text-muted-foreground">/mes</span> */}
           </div>
           <p className="mb-4 text-muted-foreground">{description}</p>
           <ul className="space-y-2">
