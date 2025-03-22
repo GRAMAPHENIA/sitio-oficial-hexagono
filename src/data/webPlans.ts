@@ -16,7 +16,7 @@ export const webPlans: PricingPlan[] = [
       "Cuenta de correo",
       "Galería de fotos",
     ],
-    price: 150000, // Precio promedio entre 15 horas de trabajo
+    price: 170000, // Precio promedio entre 15 horas de trabajo
     currency: "$",
     available: true,
   },
@@ -35,7 +35,7 @@ export const webPlans: PricingPlan[] = [
       "Cuenta de correo",
       "Galería de fotos",
     ],
-    price: 225000, // Precio promedio entre 30 horas de trabajo
+    price: 250000, // Precio promedio entre 30 horas de trabajo
     currency: "$",
     available: true,
   },
@@ -56,7 +56,7 @@ export const webPlans: PricingPlan[] = [
       "Enlace a redes sociales",
       "Hosting (Tienda Nube)",
     ],
-    price: 335000, // Precio promedio entre 45 horas de trabajo
+    price: 370000, // Precio promedio entre 45 horas de trabajo
     currency: "$",
     available: true,
   },

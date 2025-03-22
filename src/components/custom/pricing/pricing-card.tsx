@@ -72,12 +72,12 @@ export function PricingCard({ plan }: PricingCardProps) {
           </ul>
         </CardContent>
         <CardFooter>
-          <Button
+          {/* <Button
             className="w-full"
             variant={available ? "default" : "secondary"}
           >
             {available ? "Comenzar" : "inscribirse en la lista de espera"}
-          </Button>
+          </Button> */}
         </CardFooter>
       </Card>
     </div>
