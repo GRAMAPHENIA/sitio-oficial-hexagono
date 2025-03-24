@@ -15,14 +15,14 @@ export const metadata: Metadata = {
       "Soluciones personalizadas de desarrollo web para transformar tu negocio.",
     url: "https://www.hexagono.xyz/desarrollo-a-medida",
     type: "website",
-    images: ["/logo-hexagono.webp"],
+    images: ["/logo-og-hexagono-redes.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Desarrollo a Medida - Hexágono",
     description:
       "Transforma tu negocio con nuestras soluciones de desarrollo web a medida.",
-    images: ["/logo-hexagono.webp"],
+    images: ["/logo-og-hexagono-redes.webp"],
   },
 };
 
