@@ -3,6 +3,7 @@ import { ToastProvider } from "@/components/ui/use-toast";
 import "./globals.css";
 
 export const metadata = {
+  metadataBase: new URL("https://www.hexagono.xyz"), 
   title: "Hexágono",
   description: "Creado por Hexágono, diseño y desarrollo web.",
   icons: {
